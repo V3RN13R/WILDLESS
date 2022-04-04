@@ -11,9 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Src\Source.cpp" />
+    <ClCompile Include="..\Src\WildLess.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Src\WildLess.h" />
     <ClInclude Include="..\Src\WildlessDll.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
