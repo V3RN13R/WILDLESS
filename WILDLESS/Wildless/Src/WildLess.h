@@ -1,6 +1,7 @@
 #ifndef WildLessSrc
 #define WildLessSrc
 #include "WildlessDll.h"
+
 class WILDLESS_API WildLess
 {
 public:
