@@ -1,0 +1,1 @@
+plat4.mesh lleva material plat4 (plat4/plat4)

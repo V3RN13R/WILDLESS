@@ -1,0 +1,1 @@
+plat1.mesh lleva material plat1 (plat1/plat1)

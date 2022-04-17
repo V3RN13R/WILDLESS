@@ -1,0 +1,2 @@
+plat5c.mesh lleva material plat5c (plat5/plat5c)
+plat5s.mesh lleva material plat5s (plat5/plat5s)

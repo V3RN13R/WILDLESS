@@ -1,0 +1,2 @@
+itronco (interior tronco) lleva material itronco (tronco/itronco)
+etronco (exterior tronco) lleva material etronco (tronco/etronco)
