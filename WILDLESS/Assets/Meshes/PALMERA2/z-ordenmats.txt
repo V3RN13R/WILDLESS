@@ -1,0 +1,2 @@
+tPalmera2 lleva material p2t (p2t/p2t)
+cPalmera2 lleva material p2c (p2c/p2c)

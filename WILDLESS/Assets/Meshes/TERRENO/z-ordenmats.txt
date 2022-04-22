@@ -1,0 +1,1 @@
+terreno.mesh ha de tener una textura UV

@@ -1,0 +1,1 @@
+bandera.mesh y palo.mesh han de tener materiales simples (colores).

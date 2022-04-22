@@ -1,0 +1,2 @@
+tPalmera1 lleva material p1t (p1t/p1t)
+cPalmera1 lleva material p1c (p1c/p1c)

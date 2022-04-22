@@ -1,0 +1,2 @@
+Los plátanos han de tener textura UV.
+Considerar el quitar el plátano triple porque puede ser más difícil hacer una textura UV de 3 plátanos que no instanciar 3 plátanos.
