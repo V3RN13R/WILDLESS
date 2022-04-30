@@ -9,14 +9,14 @@ SistemaLogros::SistemaLogros(Entity* entidadLogro) {
 	_nLogros = 0;
 
 	//Añadir los logros que hay en la escena
-	//for (auto e : entidadLogro->getComponents()) { //EN EL MOTOR HACER METODO QUE DEVUELVA VECTOR DE REFERENCIAS A COMPONENTES DE LA ENTIDAD-------------
-	//	Logro* l = dynamic_cast<Logro*>(e->getComponent("Logro"));
-	//	if (l) {
-	//		_nLogros++;
-	//		_logros.push_back(l);
-	//		l->setSl(this);
-	//	}
-	//}
+	for (auto comp : entidadLogro->getComponents()) {
+		Logro* l = dynamic_cast<Logro*>(comp);
+		if (l) {
+			_nLogros++;
+			_logros.push_back(l);
+			l->setSl(this);
+		}
+	}
 }
 
 float SistemaLogros::actualizaProgreso()
