@@ -1,31 +1,39 @@
 #include "SistemaLogros.h"
+#include "Entity.h"
+#include "Logro.h"
 
-SistemaLogros::SistemaLogros() {
+SistemaLogros::SistemaLogros(Entity* entidadLogro) {
 
 	_completados = 0;
 	_progreso = 0;
-	//Leer los logros
-	for (int i = 0; i < N_LOGROS; i++) {
-		_logros[i].nombre = "Primera baja";
-		_logros[i].descripcion= "Elimina a un enemigo";
-		_logros[i].completado= false;
-		_logros[i].metricaActual = nullptr;
-		_logros[i].metricaFinal = 0;
-	}
+	_nLogros = 0;
+
+	//Añadir los logros que hay en la escena
+	//for (auto e : entidadLogro->getComponents()) { //EN EL MOTOR HACER METODO QUE DEVUELVA VECTOR DE REFERENCIAS A COMPONENTES DE LA ENTIDAD-------------
+	//	Logro* l = dynamic_cast<Logro*>(e->getComponent("Logro"));
+	//	if (l) {
+	//		_nLogros++;
+	//		_logros.push_back(l);
+	//		l->setSl(this);
+	//	}
+	//}
 }
 
 float SistemaLogros::actualizaProgreso()
 {
-	_progreso = (_completados / N_LOGROS)*100;
+	_progreso = (_completados / _nLogros)*100;
 	return _progreso;
 }
 
-void SistemaLogros::actualizaCompletados()
+void SistemaLogros::showCompletado(Logro* l)
 {
-	for (int i = 0; i < N_LOGROS; i++) {
-		if (*(_logros[i].metricaActual) == _logros[i].metricaFinal) {
-			_logros[i].completado = true;
-			_completados++;
-		}
+	//MANDAR A LA INTERFAZ QUE SE VEA EL LOGRO QUE SE HA COMPLETADO
+}
+
+void SistemaLogros::showCompletados()
+{
+	for (auto l : _logros) {
+		if (l->getCompletado())
+			showCompletado(l);
 	}
 }

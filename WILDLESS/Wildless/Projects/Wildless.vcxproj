@@ -11,10 +11,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Src\Logro.cpp" />
     <ClCompile Include="..\Src\SistemaLogros.cpp" />
     <ClCompile Include="..\Src\WildLess.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Src\Logro.h" />
     <ClInclude Include="..\Src\SistemaLogros.h" />
     <ClInclude Include="..\Src\WildLess.h" />
     <ClInclude Include="..\Src\WildlessDll.h" />
