@@ -8,7 +8,7 @@
 class SistemaLogros;
 class WILDLESS_API  Logro : public Component
 {
-private:
+protected:
 	SistemaLogros* _sl = nullptr;
 	std::string _nombre;
 	std::string _descripcion;
@@ -19,7 +19,7 @@ public:
 	Logro(std::map<std::string, std::string> args);
 	virtual ~Logro() {};
 	virtual bool updateMetricaActual(int valor);
-	virtual void receiveEvent(MessageType msg, Entity* e) override = 0; // tiene que llamar a updateMetricaActual en general
+	virtual void receiveEvent(int msg, Entity* e) override = 0; // tiene que llamar a updateMetricaActual en general
 
 	void setSl(SistemaLogros* sl) { _sl = sl; };
 
