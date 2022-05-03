@@ -11,15 +11,35 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Src\BananaMovement.cpp" />
+    <ClCompile Include="..\Src\Destroyable.cpp" />
+    <ClCompile Include="..\Src\FactoryGame.cpp" />
+    <ClCompile Include="..\Src\Ground.cpp" />
+    <ClCompile Include="..\Src\Health.cpp" />
     <ClCompile Include="..\Src\Logro.cpp" />
+    <ClCompile Include="..\Src\MonkeyStats.cpp" />
+    <ClCompile Include="..\Src\MovementPlayer.cpp" />
+    <ClCompile Include="..\Src\Pickable.cpp" />
+    <ClCompile Include="..\Src\Player.cpp" />
     <ClCompile Include="..\Src\PrimeraSangre.cpp" />
+    <ClCompile Include="..\Src\Shoot.cpp" />
     <ClCompile Include="..\Src\SistemaLogros.cpp" />
     <ClCompile Include="..\Src\WildLess.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Src\BananaMovement.h" />
+    <ClInclude Include="..\Src\Destroyable.h" />
+    <ClInclude Include="..\Src\FactoryGame.h" />
     <ClInclude Include="..\Src\GameUtils.h" />
+    <ClInclude Include="..\Src\Ground.h" />
+    <ClInclude Include="..\Src\Health.h" />
     <ClInclude Include="..\Src\Logro.h" />
+    <ClInclude Include="..\Src\MonkeyStats.h" />
+    <ClInclude Include="..\Src\MovementPlayer.h" />
+    <ClInclude Include="..\Src\Pickable.h" />
+    <ClInclude Include="..\Src\Player.h" />
     <ClInclude Include="..\Src\PrimeraSangre.h" />
+    <ClInclude Include="..\Src\Shoot.h" />
     <ClInclude Include="..\Src\SistemaLogros.h" />
     <ClInclude Include="..\Src\WildLess.h" />
     <ClInclude Include="..\Src\WildlessDll.h" />
@@ -75,11 +95,13 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;V3RN13R_GAME;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)..\Engine\VERNIERENGINE\Src\Common;$(SolutionDir)..\Engine\VERNIERENGINE\Dependencies\Ogre\Build\$(Platform)\SDL-main\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Common_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ENGINE\VERNIERENGINE\Exes</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -91,13 +113,15 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;V3RN13R_GAME;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)..\Engine\VERNIERENGINE\Src\Common;$(SolutionDir)..\Engine\VERNIERENGINE\Dependencies\Ogre\Build\$(Platform)\SDL-main\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Common.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ENGINE\VERNIERENGINE\Exes</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
