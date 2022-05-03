@@ -13,10 +13,12 @@
   <ItemGroup>
     <ClCompile Include="..\Src\BananaMovement.cpp" />
     <ClCompile Include="..\Src\Destroyable.cpp" />
+    <ClCompile Include="..\Src\Enemigo.cpp" />
     <ClCompile Include="..\Src\FactoryGame.cpp" />
     <ClCompile Include="..\Src\Ground.cpp" />
     <ClCompile Include="..\Src\Health.cpp" />
     <ClCompile Include="..\Src\Logro.cpp" />
+    <ClCompile Include="..\Src\Merodear.cpp" />
     <ClCompile Include="..\Src\MonkeyStats.cpp" />
     <ClCompile Include="..\Src\MovementPlayer.cpp" />
     <ClCompile Include="..\Src\Pickable.cpp" />
@@ -29,11 +31,13 @@
   <ItemGroup>
     <ClInclude Include="..\Src\BananaMovement.h" />
     <ClInclude Include="..\Src\Destroyable.h" />
+    <ClInclude Include="..\Src\Enemigo.h" />
     <ClInclude Include="..\Src\FactoryGame.h" />
     <ClInclude Include="..\Src\GameUtils.h" />
     <ClInclude Include="..\Src\Ground.h" />
     <ClInclude Include="..\Src\Health.h" />
     <ClInclude Include="..\Src\Logro.h" />
+    <ClInclude Include="..\Src\Merodear.h" />
     <ClInclude Include="..\Src\MonkeyStats.h" />
     <ClInclude Include="..\Src\MovementPlayer.h" />
     <ClInclude Include="..\Src\Pickable.h" />

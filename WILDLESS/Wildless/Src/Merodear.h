@@ -1,12 +1,13 @@
 #pragma once
 #include "Component.h"
+#include "WildlessDll.h"
 #include <map>
 #include <string>
 
 class Transform;
 class Rigidbody;
 
-class Merodear : public Component
+class WILDLESS_API Merodear : public Component
 {
 public:
 	void onEnable();

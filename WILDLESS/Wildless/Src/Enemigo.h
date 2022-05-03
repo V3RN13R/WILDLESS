@@ -2,14 +2,14 @@
 #include "Component.h"
 #include <map>
 #include <string>
-
+#include "WildlessDll.h"
 class Transform;
 class Rigidbody;
 class MeshRenderer;
 class Vector3D;
 class Merodear;
 
-class Enemigo : public Component
+class WILDLESS_API Enemigo : public Component
 {
 public:
 	Enemigo() {};

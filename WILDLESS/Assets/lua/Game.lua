@@ -15,7 +15,7 @@ logros={
 cubo1={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground", "Destroyable"},
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Merodear", "Enemigo"},
 
     Transform = {
         Position = "200,100,0",
@@ -27,17 +27,18 @@ cubo1={
         Mesh = "Cube"
     },
     Rigidbody = {
-        isTrigger = "true",
+        isTrigger = "false",
         Type = "Box",
-        Mass = "0",
+        Mass = "1",
         Scale = "100,100,100",
         Position = "200,100,0"
     },
-    Ground ={
-
+    Merodear = {
+        Vel = "10",
+        TiempoMerodeo = "3"
     },
-    Destroyable ={
-
+    Enemigo = {
+        TiempoAparicion = "2"
     }
 }
 
