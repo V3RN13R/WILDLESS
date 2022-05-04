@@ -7,7 +7,7 @@ set ExesDir=%~dp0\WILDLESS\ENGINE\VERNIERENGINE\Exes
 cd  .\WILDLESS\ENGINE
 call VernierEngine.bat
 :: Una vez compiladas las dependencias pasamos a compilar nuestro motor como tal 
-cd ..\Wildless
+cd ..\..\Wildless
 msbuild "Wildless.sln" /p:configuration=Debug
 msbuild "Wildless.sln" /p:configuration=Release
 ::Una vez compilada la DLL del juego movemos los assets donde esta el exe

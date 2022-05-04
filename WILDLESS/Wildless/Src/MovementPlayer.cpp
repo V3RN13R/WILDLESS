@@ -51,7 +51,7 @@ void MovementPlayer::update() {
 	if (VernierEngine::getInstance()->getInputMng()->getKeyDown(SDL_SCANCODE_SPACE)) {
 		if (jumps > 0) {
 			float currentTime = VernierEngine::getInstance()->getTime()->Time();
-			if (_lastTime + 0.5f < currentTime) {
+			if (_lastTime + 0.3f < currentTime) {
 				float multiplier = 2;
 				_rbToMove->addImpulse(Vector3D(0, 50, 0) * _jump * multiplier);
 				if (_sc)
