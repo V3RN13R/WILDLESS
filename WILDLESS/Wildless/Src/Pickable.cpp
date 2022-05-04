@@ -4,6 +4,7 @@
 #include "Rigidbody.h"
 #include "MeshRenderer.h"
 #include "Player.h"
+#include "SoundComponent.h"
 #include <iostream>
 #include "ENGINE.h"
 #include "VernierTime.h"
@@ -22,8 +23,29 @@ void Pickable::onTriggerEnter(Entity* other, Vector3D point) {
 			playerInfo->addBananas(_value);
 		}
 		_lastTime = VernierEngine::getInstance()->getTime()->Time();
+		if (_sc)
+			_sc->playsound("PickBannana");
 	}
 }
+void Pickable::onEnable()
+{
+	Component::onEnable();
+	if (_sc)
+		_sc->resumeAllSounds();
+}
+void Pickable::onDisable()
+{
+	Component::onDisable();
+	if (_sc)
+		_sc->stopAllSounds();
+}
+
+
+void Pickable::start()
+{
+	_sc = (SoundComponent*)entity_->getComponent("SoundComponent");
+}
+
 
 void Pickable::update()
 {

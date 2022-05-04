@@ -7,6 +7,8 @@ class Entity;
 class Vector3D;
 class MeshRenderer;
 class Rigidbody;
+class SoundComponent;
+
 class Pickable :
     public Component
 {
@@ -15,11 +17,15 @@ public:
 private:
     MeshRenderer* _mesh;
     Rigidbody* _rb;
+    SoundComponent* _sc;
     bool gotcha;
     double _lastTime;
     int _generationTime;
     int _value;
     void onTriggerEnter(Entity* other, Vector3D point);
     void update();
+    void onDisable() override;
+    void onEnable() override;
+    void start() override;
 };
 
