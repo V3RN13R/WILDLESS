@@ -111,7 +111,7 @@ plat4={
     Ground = {}
 }
 
-npc = {    
+npc = {
     Active = true,
     Listener = false,
     Components = {"Transform","MeshRenderer", "Rigidbody", "Merodear", "Enemigo", "Destroyable"},
@@ -119,7 +119,7 @@ npc = {
     Transform = {
         Position = "500,100,500",
         Scale = "3,3,3",
-        Rotation = "0,0,0"
+        Rotation = "0,90,0"
     },
 
     MeshRenderer = {
@@ -138,12 +138,12 @@ npc = {
         TiempoMerodeo = "3"
     },
     Enemigo = {
-        TiempoAparicion = "2"
+        TiempoAparicion = "2",
+        DistanciaDespawn = "2000"
     },
     Destroyable = {
 
 }
-
 
 
 }
