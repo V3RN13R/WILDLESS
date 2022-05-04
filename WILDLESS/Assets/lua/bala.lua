@@ -5,16 +5,17 @@ bala={
 
     Transform = {
         Position = "0,100,0",
-        Scale = "1,1,1",
+        Scale = "10,10,10",
         Rotation = "0,0,0"
     },
     
     MeshRenderer = {
-        Mesh = "Sphere"
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
     },
 
     Rigidbody = {
-        isTrigger = "true",
+        isTrigger = "false",
         Type = "Sphere",
         Mass = "1",
         Radius = "10",
@@ -23,6 +24,6 @@ bala={
     BananaMovement = {
         TTL = "2",
         Speed = "500",
-        Disparador = "camaraPrincipal2"       
+        Disparador = "camaraPrincipal"       
     }
 }
