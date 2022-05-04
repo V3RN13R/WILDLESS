@@ -8,6 +8,7 @@
 #include "MeshRenderer.h"
 #include "MeshRenderer.h"
 #include "Utils.h"
+#include "Health.h"
 #include "Merodear.h"
 #include "Patrullar.h"
 #include <iostream>
@@ -31,7 +32,7 @@ void Enemigo::onEnable()
 	_patrulleo = static_cast<Patrullar*>(entity_->getComponent("Patrullar"));
 
 	_posIni = (_tr->getPos());
-	std::cout << "PosINi\n";
+	//std::cout << "PosINi\n";
 
 	//Esto es para cuando hayamso salido de la esca
 	if (_muerto) {
@@ -54,6 +55,14 @@ void Enemigo::setDestroyed()
 	if(_patrulleo)_patrulleo->setEnable(false);
 	_lastTime = VernierEngine::getInstance()->getTime()->Time();
 	_muerto = true;
+}
+
+void Enemigo::onCollisionEnter(Entity* other, Vector3D point, Vector3D normal)
+{
+	if (other->getComponent("MovementPlayer")) {
+		Health* vida = static_cast<Health*>(other->getComponent("Health"));
+		vida->loseLives();
+	}
 }
 
 
@@ -81,7 +90,6 @@ void Enemigo::update() {
 
 		Vector3D vectorAB = _posIni - _tr->getPos();
 		float dist = std::sqrt(powf(vectorAB.getX(), 2) + powf(vectorAB.getY(), 2) + powf(vectorAB.getZ(), 2));
-		std::cout << "Distancia: " << dist << "\n";
 		if (dist > _distanciaDespawn) {
 			_rb->resetTransform(_posIni, 0, 0, 0, 0);
 			_tr->setPosition(_posIni);

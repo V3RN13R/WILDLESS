@@ -88,4 +88,9 @@ void BananaMovement::onCollisionEnter(Entity* other, Vector3D point, Vector3D no
 		_rb->setEnable(false);
 		entity_->destroy();
 	}	
+	else {
+		std::cout << "Cocabanana\n";
+		_sc->playsound("BananaChocar", 0.5f);
+
+	}
 }

@@ -61,9 +61,6 @@ void MovementPlayer::update() {
 			}
 
 		}
-		else {
-			std::cout << "No salto";
-		}
 	}
 
 	float rotacionFinal = 0.0f;
@@ -74,7 +71,6 @@ void MovementPlayer::update() {
 		rotacionFinal += 0;
 		teclasPulsadas++;
 
-		std::cout << transformCamara->getRot().getY() << "\n";
 	}
 	if (VernierEngine::getInstance()->getInputMng()->getKeyDown(SDL_SCANCODE_D)) {
 		dirFinal += Vector3D(std::cos((transformCamara->getRot().getY() + -90) * toRadians), 0, -std::sin((transformCamara->getRot().getY() - 90) * toRadians)) * _vel * _speed;
@@ -95,7 +91,7 @@ void MovementPlayer::update() {
 	//POR SI QUEREMOS NORMALIZAR
 	//dirFinal = Vector3D(dirFinal.getX() != 0 ? dirFinal.getX() / dirFinal.getX() : 0, _rbToMove->getVel().getY(), dirFinal.getZ() != 0 ? dirFinal.getZ() / dirFinal.getZ() : 0);
 	
-	std::cout << rotacionFinal << "\n";
+	//std::cout << rotacionFinal << "\n";
 	rotacionFinal = teclasPulsadas !=0 ? rotacionFinal / teclasPulsadas : rotacionFinal;
 	if(teclasPulsadas > 0)
 		tr->setRotation(Vector3D(tr->getRot().getX(), transformCamara->getRot().getY() + rotacionFinal, tr->getRot().getZ()));

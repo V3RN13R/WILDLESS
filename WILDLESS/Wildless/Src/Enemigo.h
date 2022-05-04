@@ -19,6 +19,7 @@ public:
 
 	void onEnable();
 	void setDestroyed();
+	void onCollisionEnter(Entity* other, Vector3D point, Vector3D normal);
 private:
 	void update();
 	float _lastTime;
