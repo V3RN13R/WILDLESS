@@ -17,6 +17,7 @@ private:
 	Vector3D dirFinal = Vector3D(0, 0, 0);
 	Rigidbody* _rbToMove = nullptr;
 	Transform* transformCamara = nullptr;
+	Transform* tr = nullptr;
 	SoundComponent* _sc = nullptr;
 	std::string _entidadBuscar;
 	int jumps;
