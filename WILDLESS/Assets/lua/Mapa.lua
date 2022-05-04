@@ -1,5 +1,5 @@
 mapa={
-    entities={"logros", "plat1", "plat2", "plat3", "plat4","mono2", "suelo","camaraPrincipal", "luz", "obs1",
+    entities={"logros", "plat1", "plat2", "plat3", "plat4","mono2", "suelo","camaraPrincipal", "luz", "obs1", "bannana1",
     "npc"               }
 }
 
@@ -267,6 +267,37 @@ suelo={
         Position = "0,0,0"
     },
     Ground = { }    
+}
+bannana1={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable", "SoundComponent" },
+
+    Transform = {
+        Position = "5000,450,0",
+        Scale = "20,20,20",
+        Rotation = "0,0,0"
+    },
+    MeshRenderer = {
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
+    },
+    Rigidbody = {
+        isTrigger = "true",
+        Type = "Box",
+        Mass = "0",
+        Scale = "90,70,90",
+        Position = "5000,450,0"
+    },
+    Pickable = {
+        Value = "1",
+        GTime = "5"
+    },
+    SoundComponent={
+        Ruta =  "./Assets/Sounds/",
+        PickBannana = "pickupPlatano.wav"
+    }
+
 }
 
 camaraPrincipal={
