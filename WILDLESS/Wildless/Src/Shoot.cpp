@@ -16,7 +16,7 @@ void Shoot::dispara() {
 	en->onEnable();
 	cont++;
 	if(_sc)
-		_sc->playsound("Shoot");
+		_sc->playsound("Shoot", 0.75f);
 }
 
 void Shoot::receiveEvent(int msg, Entity* e) {

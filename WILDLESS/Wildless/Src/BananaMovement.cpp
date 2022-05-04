@@ -4,6 +4,7 @@
 #include "Rigidbody.h"
 #include "Entity.h"
 #include "VernierTime.h"
+#include "SoundComponent.h"
 #include "Enemigo.h"
 #include "ENGINE.h"
 //#include "checkML.h"
@@ -37,13 +38,30 @@ BananaMovement::~BananaMovement()
 void BananaMovement::start()
 {
 	_lastTime = VernierEngine::getInstance()->getTime()->Time();
+	_sc = (SoundComponent*)entity_->getComponent("SoundComponent");
+
 }
+void BananaMovement::onEnable()
+{
+	Component::onEnable();
+	if (_sc)
+		_sc->resumeAllSounds();
+}
+void BananaMovement::onDisable()
+{
+	Component::onDisable();
+	if (_sc)
+		_sc->stopAllSounds();
+}
+
 
 void BananaMovement::update()
 {	
 	float currentTime = VernierEngine::getInstance()->getTime()->Time();
 	if (_lastTime + _ttl < currentTime) {
 		entity_->destroy();
+		if (_sc)
+			_sc->playsound("HitFail", 0.5f);
 	}		
 }
 
@@ -57,14 +75,15 @@ void BananaMovement::onCollisionEnter(Entity* other, Vector3D point, Vector3D no
 		if (ene) {
 			std::cout << "EntraEne\n";
 			ene->setDestroyed();
+			
 		}
 		else {
 			Rigidbody* _rbOther = static_cast<Rigidbody*>(other->getComponent("Rigidbody"));
 			_rbOther->setEnable(false);
 			other->destroy();
-
 		}
-
+		if (_sc)
+			_sc->playsound("Hit", 0.5f);
 		
 		_rb->setEnable(false);
 		entity_->destroy();

@@ -10,6 +10,8 @@ class btRigidBody;
 class btVector3;
 class Rigidbody;
 class Transform;
+class SoundComponent;
+
 class BananaMovement : public Component {
 private:
 	float _ttl;
@@ -22,6 +24,7 @@ private:
 	Transform* _tr = nullptr;
 	Transform* _trMono = nullptr;
 	Rigidbody* _rb = nullptr;
+	SoundComponent* _sc = nullptr;
 	float lastTime_ = .0;
 public:
 
@@ -29,6 +32,8 @@ public:
 	~BananaMovement();
 	void start() override;
 	void update() override;
+	void onDisable() override;
+	void onEnable() override;
 	//virtual void onCollisionEnter(Entity* other, Vector3D point, Vector3D normal);
 	//virtual void onCollisionStay(Entity* ohter, Vector3D point) {};
 	void onCollisionEnter(Entity* other, Vector3D point, Vector3D normal);

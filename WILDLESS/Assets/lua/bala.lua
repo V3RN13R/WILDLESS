@@ -1,7 +1,7 @@
 bala={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer","Rigidbody","BananaMovement"},
+    Components = {"Transform","MeshRenderer","Rigidbody","BananaMovement", "SoundComponent"},
 
     Transform = {
         Position = "0,100,0",
@@ -25,5 +25,10 @@ bala={
         TTL = "2",
         Speed = "500",
         Disparador = "camaraPrincipal"       
+    },
+    SoundComponent={
+        Ruta =  "./Assets/Sounds/",
+        Hit = "hit.wav",
+        HitFail = "hit_fail.wav"
     }
 }
