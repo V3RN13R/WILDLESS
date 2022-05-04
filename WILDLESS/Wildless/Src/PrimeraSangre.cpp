@@ -6,6 +6,7 @@
 #include "Entity.h"
 #include "Scene.h"
 #include "Text.h"
+#include "VernierTime.h"
 PrimeraSangre::PrimeraSangre(std::map<std::string, std::string> args):Logro(args)
 {
 	std::cout << "UN MONO MALO SE CREA" << std::endl;
@@ -24,9 +25,12 @@ void PrimeraSangre::update()
 {
 	//std::cout << "UN MONO MALO SOY YO" << std::endl;
 	//Esto iria en otra componente pero para probar esta en esta
-		if(VernierEngine::getInstance()->getInputMng()->getKeyDown(SDL_SCANCODE_K))
+		if(_startShow + 3.0f < VernierEngine::getInstance()->getTime()->Time())
 			static_cast<Text*>(entity_->getComponent("Text"))->hideText();
 }
 void PrimeraSangre::showInGame() {
-	static_cast<Text*>(entity_->getComponent("Text"))->showText();
+	Text* txt = static_cast<Text*>(entity_->getComponent("Text"));
+	txt->changeText(_nombre + ": " + _descripcion);
+	txt->showText();
+	_startShow = VernierEngine::getInstance()->getTime()->Time();
 }

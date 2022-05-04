@@ -10,11 +10,27 @@ mapa={
 logros={
     Active=true,
     Listener=true,
-    Components={"PrimeraSangre"},
+    Components={"PrimeraSangre","Text"},
     PrimeraSangre={
         Nombre="Simio mata simio",
         Desc= "first blood",
         MFinal="1"
+    },
+    Text={
+        OverlayName = "texto1",
+        Name = "Gemstone",
+        X = "0",
+        Y = "0",
+        FontSize = "60",
+        Order = "100",
+        Text = "Hola 23",
+        RT = 0,
+        GT = 0,
+        BT = 0,
+        RD = 0,
+        GD = 0,
+        BD = 0,
+        Begin=0
     }
 }
 

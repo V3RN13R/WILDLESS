@@ -15,7 +15,7 @@ protected:
 	bool _completado;
 	int _metricaActual; //Ej: recorre 10km(2/10)  metricaActual = 2  metricaFinal = 10
 	int _metricaFinal;
-	int timer = 3;
+	int _startShow=0;
 public:
 	Logro(std::map<std::string, std::string> args);
 	virtual ~Logro() {};
