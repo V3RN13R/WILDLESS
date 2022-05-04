@@ -9,5 +9,6 @@ public:
     ~PrimeraSangre() {};
     void receiveEvent(int msg,Entity* e) override;
     void update() override;
+    void showInGame()override;
 };
 

@@ -15,6 +15,7 @@ protected:
 	bool _completado;
 	int _metricaActual; //Ej: recorre 10km(2/10)  metricaActual = 2  metricaFinal = 10
 	int _metricaFinal;
+	int timer = 3;
 public:
 	Logro(std::map<std::string, std::string> args);
 	virtual ~Logro() {};
@@ -22,7 +23,7 @@ public:
 	virtual void receiveEvent(int msg, Entity* e) override = 0; // tiene que llamar a updateMetricaActual en general
 
 	void setSl(SistemaLogros* sl) { _sl = sl; };
-
+	virtual void showInGame() {};
 	bool getCompletado() { return _completado; };
 	int getMetricaActual() { return _metricaActual; };
 	int getMetricaFinal() { return _metricaFinal; };

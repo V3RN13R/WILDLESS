@@ -10,7 +10,6 @@
 //}
 int WildLess::firstTry() {
 	//bucle del juego
-	std::cout << "\nME CAGO EN TU PUTA MADRE\n";
 	return 0;
 }
 

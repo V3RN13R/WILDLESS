@@ -12,6 +12,8 @@
 #include "Merodear.h"
 #include "Patrullar.h"
 #include <iostream>
+#include "Scene.h"
+#include "GameUtils.h"
 #include <math.h>
 //#include "checkML.h"
 
@@ -49,6 +51,9 @@ void Enemigo::setDestroyed()
 	std::cout << "Uhhhh\n";
 
 	//Esto es la prueba para que se muera, en ves de player sería banana
+	for (Entity* e : *entity_->getScene()->getListeners()) {
+		e->receiveEvent(Message::ENEMIGO_MUERE, e);
+	}
 	_mesh->setVisible(false);
 	_rb->setEnable(false);
 	if(_merodeo)_merodeo->setEnable(false);
