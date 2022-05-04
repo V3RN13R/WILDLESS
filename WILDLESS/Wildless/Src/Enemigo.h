@@ -21,7 +21,9 @@ public:
 private:
 	void update();
 	float _lastTime;
+	float _distCheckTime;
 	float _tiempoAparicion;
+	float _distanciaDespawn;
 	bool _muerto;
 	Rigidbody* _rb;
 	MeshRenderer* _mesh;

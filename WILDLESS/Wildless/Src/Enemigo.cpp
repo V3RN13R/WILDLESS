@@ -10,10 +10,11 @@
 #include "Utils.h"
 #include "Merodear.h"
 #include <iostream>
+#include <math.h>
 //#include "checkML.h"
 
 
-Enemigo::Enemigo(std::map<std::string, std::string> args) : _tiempoAparicion(stof(args["TiempoAparicion"])) {
+Enemigo::Enemigo(std::map<std::string, std::string> args) : _tiempoAparicion(stof(args["TiempoAparicion"])), _distanciaDespawn(stof(args["DistanciaDespawn"])) {
 
 
 
@@ -64,6 +65,25 @@ void Enemigo::update() {
 		_tr->setPosition(_posIni);
 		_lastTime = currentTime;
 		_muerto = false;
+	}
+
+	//este timer es para no ejecutar en cada frame el cálculo del módulo para la distancia
+	if (_distCheckTime + 0.5f < currentTime){
+		_distCheckTime = currentTime;
+
+		if (!_tr) 
+			return;
+		
+
+		Vector3D vectorAB = _posIni - _tr->getPos();
+		float dist = std::sqrt(powf(vectorAB.getX(), 2) + powf(vectorAB.getY(), 2) + powf(vectorAB.getZ(), 2));
+		std::cout << "Distancia: " << dist << "\n";
+		if (dist > _distanciaDespawn) {
+			_rb->resetTransform(_posIni, 0, 0, 0, 0);
+			_tr->setPosition(_posIni);
+		}
+
+
 	}
 }
 

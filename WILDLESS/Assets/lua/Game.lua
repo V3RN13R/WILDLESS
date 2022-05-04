@@ -77,7 +77,7 @@ mono2={
 
     },
     Transform = {
-        Position = "0,300,0",
+        Position = "0,300,150",
         Scale = "1,1,1",
         Rotation = "0,0,0"
     },
@@ -89,7 +89,7 @@ mono2={
         Type = "Sphere",
         Mass = "1",
         Radius = "40",
-        Position = "0,300,0"
+        Position = "0,300,150"
     },
     MovementPlayer = {
         Vel = "30",
