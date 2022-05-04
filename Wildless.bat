@@ -5,7 +5,7 @@ set ExesDir=%~dp0\WILDLESS\ENGINE\VERNIERENGINE\Exes
 
 :: Vamos al directorio de dependencies para compilarlas
 cd  .\WILDLESS\ENGINE
-::call VERNIERENGINE.bat
+call VernierEngine.bat
 :: Una vez compiladas las dependencias pasamos a compilar nuestro motor como tal 
 cd ..\Wildless
 msbuild "Wildless.sln" /p:configuration=Debug
