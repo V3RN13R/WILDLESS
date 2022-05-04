@@ -4,6 +4,7 @@
 #include "Rigidbody.h"
 #include "Entity.h"
 #include "VernierTime.h"
+#include "Enemigo.h"
 #include "ENGINE.h"
 //#include "checkML.h"
 
@@ -46,13 +47,26 @@ void BananaMovement::update()
 	}		
 }
 
-void BananaMovement::onTriggerExit(Entity* ohter, Vector3D point)
+void BananaMovement::onCollisionEnter(Entity* other, Vector3D point, Vector3D normal)
 {
-	if (ohter->getComponent("Destroyable")) {
-		Rigidbody* _rbOther = static_cast<Rigidbody*>(ohter->getComponent("Rigidbody"));
-		_rbOther->setEnable(false);
+	if (other->getComponent("Destroyable")) {
+		std::cout << "colision\n";
+		
+
+		Enemigo* ene = static_cast<Enemigo*>(other->getComponent("Enemigo"));
+		if (ene) {
+			std::cout << "EntraEne\n";
+			ene->setDestroyed();
+		}
+		else {
+			Rigidbody* _rbOther = static_cast<Rigidbody*>(other->getComponent("Rigidbody"));
+			_rbOther->setEnable(false);
+			other->destroy();
+
+		}
+
+		
 		_rb->setEnable(false);
-		ohter->destroy();
 		entity_->destroy();
 	}	
 }

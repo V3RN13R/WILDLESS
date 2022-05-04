@@ -17,7 +17,7 @@ public:
 	~Enemigo() {};
 
 	void onEnable();
-	void onCollisionEnter(Entity* other, Vector3D point, Vector3D normal);
+	void setDestroyed();
 private:
 	void update();
 	float _lastTime;
