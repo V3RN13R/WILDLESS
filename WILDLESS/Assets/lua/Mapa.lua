@@ -311,7 +311,8 @@ mono2={
     SoundComponent={
         Ruta =  "./Assets/Sounds/",
         Shoot = "shoot.wav",
-        Jump = "jump.wav"
+        Jump = "jump.wav",
+        Walk = "paso.wav"
     }
 }
 

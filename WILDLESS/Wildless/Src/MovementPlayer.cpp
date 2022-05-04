@@ -48,15 +48,16 @@ void MovementPlayer::onEnable()
 
 void MovementPlayer::update() {
 	dirFinal = Vector3D(0, 0, 0);
+	float currentTime = VernierEngine::getInstance()->getTime()->Time();
 	if (VernierEngine::getInstance()->getInputMng()->getKeyDown(SDL_SCANCODE_SPACE)) {
 		if (jumps > 0) {
-			float currentTime = VernierEngine::getInstance()->getTime()->Time();
 			if (_lastTime + 0.3f < currentTime) {
 				float multiplier = 2;
 				_rbToMove->addImpulse(Vector3D(0, 50, 0) * _jump * multiplier);
 				if (_sc)
 					_sc->playsound("Jump");
 				jumps--;
+				_jumping = true;
 				_lastTime = currentTime;
 			}
 
@@ -90,7 +91,11 @@ void MovementPlayer::update() {
 	}
 	//POR SI QUEREMOS NORMALIZAR
 	//dirFinal = Vector3D(dirFinal.getX() != 0 ? dirFinal.getX() / dirFinal.getX() : 0, _rbToMove->getVel().getY(), dirFinal.getZ() != 0 ? dirFinal.getZ() / dirFinal.getZ() : 0);
-	
+	if (_lastSoundWalkTime + 0.3f < currentTime && teclasPulsadas > 0 && !_jumping) {
+		if (_sc)
+			_sc->playsound("Walk", 0.1f);
+		_lastSoundWalkTime = currentTime;
+	}
 	//std::cout << rotacionFinal << "\n";
 	rotacionFinal = teclasPulsadas !=0 ? rotacionFinal / teclasPulsadas : rotacionFinal;
 	if(teclasPulsadas > 0)
@@ -115,5 +120,7 @@ void MovementPlayer::onCollisionEnter(Entity* other, Vector3D point, Vector3D no
 {
 	if (other->getComponent("Ground")) {
 		jumps = 2;
+		_jumping = false;
+
 	}
 }

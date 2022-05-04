@@ -23,11 +23,12 @@ private:
 	int jumps;
 	float  _vel;
 	float _lastTime=0.0f;
+	float _lastSoundWalkTime = 0.0f;
 
 	//Stats
 	float _speed;
 	float _jump;
-
+	bool _jumping = true;
 	void update();
 public:
 
