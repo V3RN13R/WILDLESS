@@ -14,10 +14,13 @@
 #include "Shoot.h"
 #include "Merodear.h"
 #include "Enemigo.h"
+#include "Patrullar.h"
+
 Component* PrimeraSangreFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
 {
 	return new PrimeraSangre(args);
 }
+
 Component* MovementPlayerFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
 {
     return  new MovementPlayer(args);
@@ -46,6 +49,11 @@ Component* PlayerFactory::createComponent(std::map<std::string, std::string> arg
 Component* BananaMovementFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
 {
      return new BananaMovement(args, ent);
+}
+
+Component* PatrullarFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
+{
+    return new Patrullar(args);
 }
 
 Component* DestroyableFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
@@ -80,4 +88,5 @@ void initGameFactories() {
     fM->addFactory("Player", new PlayerFactory()); //
     fM->addFactory("Enemigo", new EnemigoFactory()); //
     fM->addFactory("Merodear", new MerodearFactory()); //
+    fM->addFactory("Patrullar", new PatrullarFactory()); //
 }

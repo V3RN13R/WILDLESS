@@ -8,6 +8,7 @@ class Rigidbody;
 class MeshRenderer;
 class Vector3D;
 class Merodear;
+class Patrullar;
 
 class WILDLESS_API Enemigo : public Component
 {
@@ -29,5 +30,6 @@ private:
 	MeshRenderer* _mesh;
 	Transform* _tr;
 	Merodear* _merodeo;
+	Patrullar* _patrulleo;
 	Vector3D _posIni;
 };

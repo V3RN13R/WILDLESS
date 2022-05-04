@@ -64,6 +64,13 @@ public:
 	//virtual ~PickableFactory() { if (_c != nullptr) delete _c; };
 };
 
+class PatrullarFactory : public Factory
+{
+public:
+	Component* createComponent(std::map<std::string, std::string> args, Entity* ent) override;
+	//virtual ~PickableFactory() { if (_c != nullptr) delete _c; };
+};
+
 class EnemigoFactory : public Factory
 {
 public:

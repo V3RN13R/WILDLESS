@@ -9,6 +9,7 @@
 #include "MeshRenderer.h"
 #include "Utils.h"
 #include "Merodear.h"
+#include "Patrullar.h"
 #include <iostream>
 #include <math.h>
 //#include "checkML.h"
@@ -27,6 +28,7 @@ void Enemigo::onEnable()
 	_mesh = static_cast<MeshRenderer*>(entity_->getComponent("MeshRenderer"));
 	_tr = static_cast<Transform*>(entity_->getComponent("Transform"));
 	_merodeo = static_cast<Merodear*>(entity_->getComponent("Merodear"));
+	_patrulleo = static_cast<Patrullar*>(entity_->getComponent("Patrullar"));
 
 	_posIni = (_tr->getPos());
 	std::cout << "PosINi\n";
@@ -36,6 +38,7 @@ void Enemigo::onEnable()
 		_mesh->setVisible(false);
 		_rb->setEnable(false);
 		_merodeo->setEnable(false);
+		_patrulleo->setEnable(false);
 	}
 
 }
@@ -47,7 +50,8 @@ void Enemigo::setDestroyed()
 	//Esto es la prueba para que se muera, en ves de player sería banana
 	_mesh->setVisible(false);
 	_rb->setEnable(false);
-	_merodeo->setEnable(false);
+	if(_merodeo)_merodeo->setEnable(false);
+	if(_patrulleo)_patrulleo->setEnable(false);
 	_lastTime = VernierEngine::getInstance()->getTime()->Time();
 	_muerto = true;
 }
@@ -60,7 +64,7 @@ void Enemigo::update() {
 	if (_muerto && _lastTime + _tiempoAparicion < currentTime) {
 		_mesh->setVisible(true);
 		_rb->setEnable(true);
-		_merodeo->setEnable(true);
+		if(_patrulleo)_patrulleo->setEnable(true);
 		_rb->resetTransform(_posIni, 0, 0, 0, 0);
 		_tr->setPosition(_posIni);
 		_lastTime = currentTime;

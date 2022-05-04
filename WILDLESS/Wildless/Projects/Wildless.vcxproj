@@ -21,6 +21,7 @@
     <ClCompile Include="..\Src\Merodear.cpp" />
     <ClCompile Include="..\Src\MonkeyStats.cpp" />
     <ClCompile Include="..\Src\MovementPlayer.cpp" />
+    <ClCompile Include="..\Src\Patrullar.cpp" />
     <ClCompile Include="..\Src\Pickable.cpp" />
     <ClCompile Include="..\Src\Player.cpp" />
     <ClCompile Include="..\Src\PrimeraSangre.cpp" />
@@ -40,6 +41,7 @@
     <ClInclude Include="..\Src\Merodear.h" />
     <ClInclude Include="..\Src\MonkeyStats.h" />
     <ClInclude Include="..\Src\MovementPlayer.h" />
+    <ClInclude Include="..\Src\Patrullar.h" />
     <ClInclude Include="..\Src\Pickable.h" />
     <ClInclude Include="..\Src\Player.h" />
     <ClInclude Include="..\Src\PrimeraSangre.h" />
