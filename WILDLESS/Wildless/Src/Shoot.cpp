@@ -30,12 +30,6 @@ void Shoot::dispara() {
 }
 
 void Shoot::receiveEvent(int msg, Entity* e) {
-	if (msg == MessageType::DISPARO) {
-		if (_disparoDisponible) {
-			dispara();
-			_lastTime = VernierEngine::getInstance()->getTime()->Time();
-		}
-	}
 	if (msg == Message::RECOGE_BANANA) {
 		cont++;
 	}
@@ -49,6 +43,12 @@ void Shoot::update()
 	float currentTime = VernierEngine::getInstance()->getTime()->Time();
 	if (!_disparoDisponible && _lastTime + _coolDownDisparo < currentTime) {
 		_disparoDisponible = true;
+	}
+	if (VernierEngine::getInstance()->getInputMng()->getKeyDown(SDL_SCANCODE_F)) {
+		if (_disparoDisponible) {
+			dispara();
+			_lastTime = VernierEngine::getInstance()->getTime()->Time();
+		}
 	}
 
 }
