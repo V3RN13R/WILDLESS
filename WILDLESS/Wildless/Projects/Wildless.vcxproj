@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Src\BananaMovement.cpp" />
+    <ClCompile Include="..\Src\CallbacksGame.cpp" />
     <ClCompile Include="..\Src\Destroyable.cpp" />
     <ClCompile Include="..\Src\Enemigo.cpp" />
     <ClCompile Include="..\Src\FactoryGame.cpp" />
@@ -32,6 +33,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Src\BananaMovement.h" />
+    <ClInclude Include="..\Src\CallbacksGame.h" />
     <ClInclude Include="..\Src\Destroyable.h" />
     <ClInclude Include="..\Src\Enemigo.h" />
     <ClInclude Include="..\Src\FactoryGame.h" />

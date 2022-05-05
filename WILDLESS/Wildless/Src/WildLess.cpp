@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Wildless.h"
 #include "FactoryGame.h"
+#include "CallbacksGame.h"
 //WildLess::WildLess()
 //{
 //}
@@ -16,5 +17,6 @@ int WildLess::firstTry() {
 extern "C" {
 	WILDLESS_API void firstTry() {
 		initGameFactories();
-}
+		initCallbacks();
+	}
 }
