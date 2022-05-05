@@ -1138,8 +1138,8 @@ npc = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -1173,8 +1173,8 @@ npc2 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -1207,8 +1207,8 @@ npc3 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -1393,7 +1393,7 @@ mono2={
     Shoot={
         File = "bala.lua",
         Name = "bala",
-        NameInGame= "banana",
+        NameInGame= "bananita",
         CoolDownDisparo = "1"
     },
     SoundComponent={
@@ -2297,8 +2297,8 @@ bq2npc = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -2332,8 +2332,8 @@ bq2npc2 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -2366,8 +2366,8 @@ bq2npc3 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -3227,8 +3227,8 @@ bq3npc = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -3262,8 +3262,8 @@ bq3npc2 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -3296,8 +3296,8 @@ bq3npc3 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -4157,8 +4157,8 @@ bq4npc = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -4192,8 +4192,8 @@ bq4npc2 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -4226,8 +4226,8 @@ bq4npc3 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",

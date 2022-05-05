@@ -16,6 +16,7 @@ material Practica1/amarillo {
 	technique {
 		pass {
 			diffuse 1 1 0
+			specular 0 0 0
 		}
 	}
 }
