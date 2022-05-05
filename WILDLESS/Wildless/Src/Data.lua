@@ -12,11 +12,11 @@ function DLLName()
    --} 
    -- Then write exampleFunc
    function FunctionName()
-       return "firstTry"
+       return "LoadGame"
       end
    -- Insert the name you want on the window
    function WindowName()
-       return "WindowName"
+       return "Wildless"
    end
    --Insert the name of the first scene file to load
    function SceneFile()

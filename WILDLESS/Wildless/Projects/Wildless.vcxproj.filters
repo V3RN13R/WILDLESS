@@ -86,9 +86,6 @@
     <ClInclude Include="..\Src\WildlessDll.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Src\WildLess.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="..\Src\SistemaLogros.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>

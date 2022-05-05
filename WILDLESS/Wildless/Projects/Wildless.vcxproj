@@ -57,7 +57,6 @@
     <ClInclude Include="..\Src\Shoot.h" />
     <ClInclude Include="..\Src\SistemaLogros.h" />
     <ClInclude Include="..\Src\TextRef.h" />
-    <ClInclude Include="..\Src\WildLess.h" />
     <ClInclude Include="..\Src\WildlessDll.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -47,7 +47,9 @@ void ganar() {
 void gameover() {
 	VernierEngine::getInstance()->getGSM()->changeScene("menuGameover.lua", "menuGameover", false);
 }
-
+void close() {
+	VernierEngine::getInstance()->closeGame();
+}
 void initCallbacks() {
 	Callbacks::instance()->addMethod("menuPrincipal", menuPrincipal);
 	Callbacks::instance()->addMethod("menuSeleccion", menuSeleccion);
@@ -58,4 +60,5 @@ void initCallbacks() {
 	Callbacks::instance()->addMethod("mapa", mapa);
 	Callbacks::instance()->addMethod("gameover", gameover);
 	Callbacks::instance()->addMethod("ganar", ganar);
+	Callbacks::instance()->addMethod("close", close);
 }
