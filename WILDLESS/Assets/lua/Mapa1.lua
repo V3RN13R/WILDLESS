@@ -1,5 +1,5 @@
 mapa1={
-    entities={"logros",
+    entities={"logrops", "logrorb", "platanosimagen",
      "plat1", "plat2", "plat3", "plat4", "coin1", -- PARKOUR 1
      "pk2plat1", "pk2plat2","pk2plat3","pk2plat4","pk2plat5","coin2", --PARKOUR 2
      "pk3plat1", "pk3plat2", "pk3plat3", "pk3plat4", "pk3plat5","pk3plat6", "coin3", --PARKOUR 3
@@ -128,6 +128,20 @@ mapa1={
     "bq4tronco4", 
     "bq4copa5", 
     "bq4tronco5","SL" }
+}
+
+platanosimagen = {
+    Active = true,
+    Listener = false,
+    Components = {"Image"},
+    Image = {
+        OverlayName = "platanitos",
+        Name = "platanos",
+        X = "1575",
+        Y = "20",
+        W = "175",
+        H = "175"
+    }
 }
 
 SL = {
