@@ -1,5 +1,5 @@
 mapa3={
-    entities={"logrops","logrorb", "platanosimagen", "vidaimagen",
+    entities={"logrops","logrorb","logrotm", "platanosimagen", "vidaimagen",
      "banana1", "banana2", "banana3","banana4", "banana5", "banana6","banana7", "banana8", -- PLATANOS
      "plat1", "plat2", "plat3", "plat4", "coin1", -- PARKOUR 1
      "pk2plat1", "pk2plat2","pk2plat3","pk2plat4","pk2plat5","coin2", --PARKOUR 2
@@ -204,6 +204,33 @@ SL = {
     }
 }
 
+
+logrotm={
+    Active=true,
+    Listener=true,
+    Components={"ParkourRecolect","Text"},
+    ParkourRecolect={
+        Nombre="Trotamundos",
+        Desc= "Has completado todos los parkours",
+        MFinal="4"
+    },
+    Text={
+        OverlayName = "textotm",
+        Name = "TURU",
+        X = "0",
+        Y = "0",
+        FontSize = "60",
+        Order = "0",
+        Text = "",
+        RT = 0,
+        GT = 0,
+        BT = 0,
+        RD = 0,
+        GD = 0,
+        BD = 0,
+        Begin=0
+    }
+}
 
 logrops={
     Active=true,

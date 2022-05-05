@@ -1,5 +1,5 @@
 mapa2={
-    entities={"logrops","logrorb", "platanosimagen", "vidaimagen",
+    entities={"logrops","logrorb","logrotm", "platanosimagen", "vidaimagen",
      "banana1", "banana2", "banana3","banana4", "banana5", "banana6","banana7", "banana8", -- PLATANOS
      "plat1", "plat2", "plat3", "plat4", "coin1", -- PARKOUR 1
      "pk2plat1", "pk2plat2","pk2plat3","pk2plat4","pk2plat5","coin2", --PARKOUR 2

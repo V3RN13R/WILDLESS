@@ -22,6 +22,7 @@
     <ClCompile Include="..\Src\Merodear.cpp" />
     <ClCompile Include="..\Src\MonkeyStats.cpp" />
     <ClCompile Include="..\Src\MovementPlayer.cpp" />
+    <ClCompile Include="..\Src\ParkourRecolect.cpp" />
     <ClCompile Include="..\Src\Patrullar.cpp" />
     <ClCompile Include="..\Src\Pickable.cpp" />
     <ClCompile Include="..\Src\PickableDestroy.cpp" />
@@ -46,6 +47,7 @@
     <ClInclude Include="..\Src\Merodear.h" />
     <ClInclude Include="..\Src\MonkeyStats.h" />
     <ClInclude Include="..\Src\MovementPlayer.h" />
+    <ClInclude Include="..\Src\ParkourRecolect.h" />
     <ClInclude Include="..\Src\Patrullar.h" />
     <ClInclude Include="..\Src\Pickable.h" />
     <ClInclude Include="..\Src\PickableDestroy.h" />

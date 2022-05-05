@@ -19,7 +19,7 @@
 #include "SistemaLogros.h"
 #include "TextRef.h"
 #include "PickableDestroy.h"
-
+#include "ParkourRecolect.h"
 Component* PrimeraSangreFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
 {
 	return new PrimeraSangre(args);
@@ -98,7 +98,10 @@ Component* PickableDestroyFactory::createComponent(std::map<std::string, std::st
 {
     return new PickableDestroy(args);
 }
-
+Component* ParkourRecolectFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
+{
+    return new ParkourRecolect(args);
+}
 void initGameFactories() {
 	FactoryManager* fM = VernierEngine::getInstance()->getFactoryMng();
     fM ->addFactory("PrimeraSangre", new PrimeraSangreFactory());
@@ -117,5 +120,6 @@ void initGameFactories() {
     fM->addFactory("SistemaLogros", new SLFactory()); //
     fM->addFactory("TextRef", new TextRefFactory()); //
     fM->addFactory("PickableDestroy", new PickableDestroyFactory()); //
+    fM->addFactory("ParkourRecolect", new ParkourRecolectFactory()); //
 }
 
