@@ -1384,8 +1384,8 @@ mono2={
     MovementPlayer = {
         Vel = "1",
         Entity = "camaraPrincipal",
-        Speed = 500,
-        Jump = 1
+        Speed = 140,
+        Jump = 6
     },
     Health = {
         Lives = 4
