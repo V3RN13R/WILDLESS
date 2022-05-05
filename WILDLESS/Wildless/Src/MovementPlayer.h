@@ -22,9 +22,9 @@ private:
 	std::string _entidadBuscar;
 	int jumps;
 	float  _vel;
-	float _lastTime=0.0f;
+	float _lastTimeJump=0.0f;
 	float _lastSoundWalkTime = 0.0f;
-
+	float _lastTime = 0.0f;
 	//Stats
 	float _speed;
 	float _jump;

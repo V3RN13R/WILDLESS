@@ -203,7 +203,32 @@ SL = {
         Callback = "ganar"
     }
 }
-
+logrotm={
+    Active=true,
+    Listener=true,
+    Components={"ParkourRecolect","Text"},
+    ParkourRecolect={
+        Nombre="Trotamundos",
+        Desc= "Has completado todos los parkours",
+        MFinal="4"
+    },
+    Text={
+        OverlayName = "textotm",
+        Name = "TURU",
+        X = "0",
+        Y = "0",
+        FontSize = "60",
+        Order = "0",
+        Text = "",
+        RT = 0,
+        GT = 0,
+        BT = 0,
+        RD = 0,
+        GD = 0,
+        BD = 0,
+        Begin=0
+    }
+}
 
 logrops={
     Active=true,
@@ -1387,7 +1412,7 @@ mono2={
         Vel = "1",
         Entity = "camaraPrincipal",
         Speed = 400,
-        Jump = 7
+        Jump = 0.7
     },
     Health = {
         Lives = 5,

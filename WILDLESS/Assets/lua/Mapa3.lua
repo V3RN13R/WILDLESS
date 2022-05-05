@@ -1414,7 +1414,7 @@ mono2={
         Vel = "1",
         Entity = "camaraPrincipal",
         Speed = 550,
-        Jump = 9
+        Jump = 1
     },
     Health = {
         Lives = 3,
