@@ -16,7 +16,7 @@ foto1 = {
     },
     
     Button1 = {
-        Callback = "mapa"
+        Callback = "jugar1"
     }
 }
 
@@ -35,7 +35,7 @@ foto2 = {
     },
     
     Button1 = {
-        Callback = "mapa"
+        Callback = "jugar2"
     }
 }
 
@@ -54,7 +54,7 @@ foto3 = {
     },
     
     Button1 = {
-        Callback = "mapa"
+        Callback = "jugar3"
     }
 }
 

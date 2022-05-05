@@ -1,4 +1,4 @@
-pruebaboton2 = {
+menuprincipalfinal = {
     entities = {"fondo", "play", "settings", "exit", "camaraPrincipal2"}
 }
 
