@@ -1,39 +1,49 @@
 #include "SistemaLogros.h"
 #include "Entity.h"
 #include "Logro.h"
+#include "ENGINE.h"
+#include "GameStateMachine.h"
+#include "Scene.h"
 
-SistemaLogros::SistemaLogros(Entity* entidadLogro) {
+SistemaLogros::SistemaLogros(std::map<std::string, std::string> args) {
 
 	_completados = 0;
 	_progreso = 0;
 	_nLogros = 0;
+}
 
+void SistemaLogros::start()
+{
 	//Añadir los logros que hay en la escena
-	for (auto comp : entidadLogro->getComponents()) {
-		Logro* l = dynamic_cast<Logro*>(comp);
-		if (l) {
-			_nLogros++;
-			_logros.push_back(l);
-			l->setSl(this);
+	for (auto e : *VernierEngine::getInstance()->getGSM()->getScene()->getListeners()) {
+		for (Component* c : e->getComponents()) {
+			Logro* l = dynamic_cast<Logro*>(c);
+			if (l) {
+				_nLogros++;
+				_logros.push_back(l);
+				l->setSl(this);
+			}
 		}
 	}
 }
 
+void SistemaLogros::update()
+{
+
+}
+
 float SistemaLogros::actualizaProgreso()
 {
-	_progreso = (_completados / _nLogros)*100;
+	_progreso = (_completados / _nLogros) * 100;
 	return _progreso;
 }
 
-void SistemaLogros::showCompletado(Logro* l)
+void SistemaLogros::addCompletados(Logro* l)
 {
-	//MANDAR A LA INTERFAZ QUE SE VEA EL LOGRO QUE SE HA COMPLETADO
-}
-
-void SistemaLogros::showCompletados()
-{
-	for (auto l : _logros) {
-		if (l->getCompletado())
-			showCompletado(l);
+	if (!l->getAddCompletado()) {
+		_completados++;
+		l->setAddCompletado();
+		std::cout << "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" << std::endl;
 	}
 }
+

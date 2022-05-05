@@ -4,21 +4,28 @@
 #include "Rigidbody.h"
 #include "MeshRenderer.h"
 #include "Player.h"
+#include "Scene.h"
 #include "SoundComponent.h"
 #include <iostream>
 #include "ENGINE.h"
 #include "VernierTime.h"
+#include "GameUtils.h"
 
 
 void Pickable::onTriggerEnter(Entity* other, Vector3D point) {
+
 	if (entity_->isActive() && other->getComponent("MovementPlayer")) {
 		std::cout << "triggerEntra\n";
+
+		for (Entity* e : *entity_->getScene()->getListeners())
+			e->receiveEvent(Message::RECOGE_BANANA, entity_);
+		
 		gotcha = true;
 		_mesh = static_cast<MeshRenderer*>(entity_->getComponent("MeshRenderer"));
 		_rb = static_cast<Rigidbody*>(entity_->getComponent("Rigidbody"));
 		_mesh->setVisible(false);
 		_rb->setEnable(false);
-		Player* playerInfo = static_cast<Player*>(other->getComponent("Player"));
+		Player* playerInfo = dynamic_cast<Player*>(other->getComponent("Player"));
 		if (playerInfo) {
 			playerInfo->addBananas(_value);
 		}
