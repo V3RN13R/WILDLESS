@@ -29,6 +29,7 @@
     <ClCompile Include="..\Src\RecogeBanana.cpp" />
     <ClCompile Include="..\Src\Shoot.cpp" />
     <ClCompile Include="..\Src\SistemaLogros.cpp" />
+    <ClCompile Include="..\Src\TextRef.cpp" />
     <ClCompile Include="..\Src\WildLess.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +52,7 @@
     <ClInclude Include="..\Src\RecogeBanana.h" />
     <ClInclude Include="..\Src\Shoot.h" />
     <ClInclude Include="..\Src\SistemaLogros.h" />
+    <ClInclude Include="..\Src\TextRef.h" />
     <ClInclude Include="..\Src\WildLess.h" />
     <ClInclude Include="..\Src\WildlessDll.h" />
   </ItemGroup>

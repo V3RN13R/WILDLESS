@@ -17,6 +17,7 @@
 #include "Enemigo.h"
 #include "Patrullar.h"
 #include "SistemaLogros.h"
+#include "TextRef.h"
 
 Component* PrimeraSangreFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
 {
@@ -87,6 +88,10 @@ Component* SLFactory::createComponent(std::map<std::string, std::string> args, E
 {
     return new SistemaLogros(args);
 }
+Component* TextRefFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
+{
+    return new TextRef(args);
+}
 
 void initGameFactories() {
 	FactoryManager* fM = VernierEngine::getInstance()->getFactoryMng();
@@ -104,5 +109,6 @@ void initGameFactories() {
     fM->addFactory("Patrullar", new PatrullarFactory()); //
     fM->addFactory("RecogeBanana", new RecogeBananaFactory()); //
     fM->addFactory("SistemaLogros", new SLFactory()); //
+    fM->addFactory("TextRef", new TextRefFactory()); //
 }
 

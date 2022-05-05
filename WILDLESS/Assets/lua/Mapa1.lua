@@ -134,7 +134,7 @@ mapa1={
 platanosimagen = {
     Active = true,
     Listener = false,
-    Components = {"Image"},
+    Components = {"Image", "TextRef"},
     Image = {
         OverlayName = "platanitos",
         Name = "platanos",
@@ -142,6 +142,24 @@ platanosimagen = {
         Y = "20",
         W = "175",
         H = "175"
+    },
+    TextRef={
+        OverlayName = "uiplatano",
+        Name = "TURU",
+        X = "887",
+        Y = "45",
+        FontSize = "80",
+        Order = "300",
+        Text = "Hola",
+        RT = 1,
+        GT = 1,
+        BT = 0,
+        RD = 1,
+        GD = 1,
+        BD = 1,
+        Begin=1,
+        Entity = "mono2",
+        Tipo = "Shoot"
     }
 }
 
@@ -1334,7 +1352,7 @@ mono2={
     MovementPlayer = {
         Vel = "1",
         Entity = "camaraPrincipal",
-        Speed = 140,
+        Speed = 500,
         Jump = 1
     },
     Health = {

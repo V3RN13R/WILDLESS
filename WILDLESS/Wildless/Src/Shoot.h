@@ -26,4 +26,5 @@ public:
 	void onDisable() override;
 	void onEnable() override;
 	void start() override;
+	int getCont() { return cont; }
 };
