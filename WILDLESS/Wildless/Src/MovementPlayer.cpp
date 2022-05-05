@@ -51,14 +51,14 @@ void MovementPlayer::update() {
 	float currentTime = VernierEngine::getInstance()->getTime()->Time();
 	if (VernierEngine::getInstance()->getInputMng()->getKeyDown(SDL_SCANCODE_SPACE)) {
 		if (jumps > 0) {
-			if (_lastTimeJump + 0.3f < currentTime) {
+			if (_lastTime + 0.3f < currentTime) {
 				float multiplier = 2;
 				_rbToMove->addImpulse(Vector3D(0, 50, 0) * _jump * multiplier);
 				if (_sc)
 					_sc->playsound("Jump");
 				jumps--;
 				_jumping = true;
-				_lastTimeJump = currentTime;
+				_lastTime = currentTime;
 			}
 
 		}
@@ -66,6 +66,7 @@ void MovementPlayer::update() {
 
 	float rotacionFinal = 0.0f;
 	float teclasPulsadas = 0;
+	
 	if (VernierEngine::getInstance()->getInputMng()->getKeyDown(SDL_SCANCODE_W)) {
 		dirFinal += Vector3D(std::cos(transformCamara->getRot().getY() * toRadians), 0, -std::sin(transformCamara->getRot().getY() * toRadians)) * _vel * _speed;
 		rotacionFinal += 0;
@@ -125,8 +126,6 @@ void MovementPlayer::update() {
 	float angle = std::atan2(det, dot);
 
 	tr->setRotation(Vector3D(tr->getRot().getX(), angle, tr->getRot().getZ()));*/
-	dirFinal = dirFinal *( ((float)VernierEngine::getInstance()->getTime()->Time()-_lastTime)*100);
-	_lastTime = VernierEngine::getInstance()->getTime()->Time();
 	dirFinal = Vector3D(dirFinal.getX(), _rbToMove->getVel().getY(), dirFinal.getZ());
 	_rbToMove->setVelocity(dirFinal);
 	//std::cout << _rbToMove->getVel().getX() << " " << _rbToMove->getVel().getY() << " " << _rbToMove->getVel().getZ() << "\n";
