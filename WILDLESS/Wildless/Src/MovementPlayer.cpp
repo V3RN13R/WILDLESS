@@ -91,15 +91,32 @@ void MovementPlayer::update() {
 	}
 	//POR SI QUEREMOS NORMALIZAR
 	//dirFinal = Vector3D(dirFinal.getX() != 0 ? dirFinal.getX() / dirFinal.getX() : 0, _rbToMove->getVel().getY(), dirFinal.getZ() != 0 ? dirFinal.getZ() / dirFinal.getZ() : 0);
+	//std::cout << rotacionFinal << "\n";
+	rotacionFinal = teclasPulsadas !=0 ? rotacionFinal / teclasPulsadas : rotacionFinal;
+
+	//BREAKDANCE!
+	if (teclasPulsadas == 0 && VernierEngine::getInstance()->getInputMng()->getKeyDown(SDL_SCANCODE_LSHIFT)) {
+		if (!_breakDancing) {
+			_rotationBreakDance = Vector3D(tr->getRot().getX(), tr->getRot().getY(), tr->getRot().getZ());
+			_breakDancing = true;
+		}
+		tr->setRotation(Vector3D(tr->getRot().getX(), tr->getRot().getY(), tr->getRot().getZ() + (rand() % 50 +10 )));
+	}
+	else if (_breakDancing) {
+		_breakDancing = false;
+		tr->setRotation(_rotationBreakDance);
+	}
+	
+	if(teclasPulsadas > 0)
+		tr->setRotation(Vector3D(tr->getRot().getX(), transformCamara->getRot().getY() + rotacionFinal, tr->getRot().getZ()));
+	
+
+	//DA UN PASO y suena paso
 	if (_lastSoundWalkTime + 0.3f < currentTime && teclasPulsadas > 0 && !_jumping) {
 		if (_sc)
 			_sc->playsound("Walk", 0.1f);
 		_lastSoundWalkTime = currentTime;
 	}
-	//std::cout << rotacionFinal << "\n";
-	rotacionFinal = teclasPulsadas !=0 ? rotacionFinal / teclasPulsadas : rotacionFinal;
-	if(teclasPulsadas > 0)
-		tr->setRotation(Vector3D(tr->getRot().getX(), transformCamara->getRot().getY() + rotacionFinal, tr->getRot().getZ()));
 	/*float x1 = std::cos(transformCamara->getRot().getY());
 	float z1 = std::sin(transformCamara->getRot().getY());
 	float x2 = dirFinal.getX();

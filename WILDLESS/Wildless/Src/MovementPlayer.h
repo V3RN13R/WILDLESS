@@ -29,6 +29,8 @@ private:
 	float _speed;
 	float _jump;
 	bool _jumping = true;
+	bool _breakDancing = false;
+	Vector3D _rotationBreakDance;
 	void update();
 public:
 
