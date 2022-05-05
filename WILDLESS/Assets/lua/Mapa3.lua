@@ -518,12 +518,12 @@ coin1={
     Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
 
     Transform = {
-        Position = "5000,450,0",
+        Position = "5050,600,50",
         Scale = "20,20,20",
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "platano.mesh",
+        Mesh = "platanos.mesh",
         Material = "Practica1/amarillo"
     },
     Rigidbody = {
@@ -531,10 +531,10 @@ coin1={
         Type = "Box",
         Mass = "0",
         Scale = "90,70,90",
-        Position = "5000,450,0"
+        Position = "5050,600,50"
     },
     Pickable = {
-        Value = "1",
+        Value = "3",
         GTime = "5"
     }
 }
@@ -668,12 +668,12 @@ coin2={
     Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
 
     Transform = {
-        Position = "-3800,850,-300",
+        Position = "-3850,1000,-350",
         Scale = "20,20,20",
-        Rotation = "0,0,0"
+        Rotation = "0,180,0"
     },    
     MeshRenderer = {
-        Mesh = "platano.mesh",
+        Mesh = "platanos.mesh",
         Material = "Practica1/amarillo"
     },
     Rigidbody = {
@@ -681,10 +681,10 @@ coin2={
         Type = "Box",
         Mass = "0",
         Scale = "90,70,90",
-        Position = "-3800,850,-300",
+        Position = "-3850,1000,-350",
     },
     Pickable = {
-        Value = "1",
+        Value = "3",
         GTime = "5"
     }
 }
@@ -842,12 +842,12 @@ coin3={
     Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
 
     Transform = {
-        Position = "-300,1250,-5000",
+        Position = "-250,1400,-5050",
         Scale = "20,20,20",
-        Rotation = "0,0,0"
+        Rotation = "0,90,0"
     },    
     MeshRenderer = {
-        Mesh = "platano.mesh",
+        Mesh = "platanos.mesh",
         Material = "Practica1/amarillo"
     },
     Rigidbody = {
@@ -855,10 +855,10 @@ coin3={
         Type = "Box",
         Mass = "0",
         Scale = "90,70,90",
-        Position = "-300,1250,-5000",
+        Position = "-250,1400,-5050",
     },
     Pickable = {
-        Value = "1",
+        Value = "3",
         GTime = "5"
     }
 }
@@ -1039,12 +1039,12 @@ coin4={
     Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
 
     Transform = {
-        Position = "-300,1250,5000",
+        Position = "-350,1400,5050",
         Scale = "20,20,20",
-        Rotation = "0,0,0"
+        Rotation = "0,-90,0"
     },    
     MeshRenderer = {
-        Mesh = "platano.mesh",
+        Mesh = "platanos.mesh",
         Material = "Practica1/amarillo"
     },
     Rigidbody = {
@@ -1052,10 +1052,10 @@ coin4={
         Type = "Box",
         Mass = "0",
         Scale = "90,70,90",
-        Position = "-300,1250,5000",
+        Position = "-350,1400,5050",
     },
     Pickable = {
-        Value = "1",
+        Value = "3",
         GTime = "5"
     }
 }
