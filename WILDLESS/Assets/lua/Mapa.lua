@@ -4,7 +4,7 @@ mapa={
      "pk2plat1", "pk2plat2","pk2plat3","pk2plat4","pk2plat5","coin2", --PARKOUR 2
      "pk3plat1", "pk3plat2", "pk3plat3", "pk3plat4", "pk3plat5","pk3plat6", "coin3", --PARKOUR 3
      "pk4plat1", "pk4plat2", "pk4plat3", "pk4plat4", "pk4plat5", "pk4plat6", "pk4plat7","coin4",--PARKOUR 4
-     "mono2", "suelo","camaraPrincipal", "luz", "obs1",
+     "mono2", "suelo","camaraPrincipal", "luz", "obs1", "obs2", "obs3", "obs4",
      -- BOSQUE 1
     "npc", "npc2", "npc3", "palm1", "palm2", "palm3", "palm4", "palm5", "palm6", "palm7",
     "palm8", "palm9", "tree2", "tree3", "tree4", "tree5", "tree6", "rock1", "rock2", 
@@ -952,8 +952,8 @@ obs1={
     Components = {"Transform","MeshRenderer", "Rigidbody", "Destroyable"},
 
     Transform = {
-        Position = "5500,100,0",
-        Scale = "2,20,2",
+        Position = "4000,500,0",
+        Scale = "2,4,2",
         Rotation = "0,0,0"
     },  
     
@@ -964,12 +964,88 @@ obs1={
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
-        Mass = "1",
-        Scale = "100,1000,100",
-        Position = "5500,100,0"
+        Mass = "0",
+        Scale = "50,200,50",
+        Position = "4000,500,0"
     }, 
     Destroyable = {}
 }
+
+obs2={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Destroyable"},
+
+    Transform = {
+        Position = "-3000,800,-200",
+        Scale = "2,4,2",
+        Rotation = "0,0,0"
+    },  
+    
+    MeshRenderer = {
+        Mesh = "Cube",
+        Material = "Practica1/rojo"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "50,200,50",
+        Position = "-3000,800,-200"
+    }, 
+    Destroyable = {}
+}
+
+obs3={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Destroyable"},
+
+    Transform = {
+        Position = "-100,800,-3000",
+        Scale = "2,4,2",
+        Rotation = "0,0,0"
+    },  
+    
+    MeshRenderer = {
+        Mesh = "Cube",
+        Material = "Practica1/rojo"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "50,200,50",
+        Position = "-100,800,-3000"
+    }, 
+    Destroyable = {}
+}
+
+obs4={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Destroyable"},
+
+    Transform = {
+        Position = "100,800,3000",
+        Scale = "2,4,2",
+        Rotation = "0,0,0"
+    },  
+    
+    MeshRenderer = {
+        Mesh = "Cube",
+        Material = "Practica1/rojo"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "50,200,50",
+        Position = "100,800,3000"
+    }, 
+    Destroyable = {}
+}
+
 
 luz = {
     Active = true,
@@ -1052,19 +1128,19 @@ suelo={
 
     Transform = {
         Position = "0,0,0",
-        Scale = "1000,1000,1000",
+        Scale = "200,200,200",
         Rotation = "-90,0,0"
     },
     
     MeshRenderer = {
         Mesh = "Plane",
-        Material = "Practica1/marron"
+        Material = "suelo/Grass"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100000,1,100000",
+        Scale = "10000,1,10000",
         Position = "0,0,0"
     },
     Ground = { }    
