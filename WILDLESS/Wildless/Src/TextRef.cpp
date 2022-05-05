@@ -21,7 +21,7 @@ void TextRef::start() {
 
 void TextRef::update() {
 	if (_tipo == "UIVida") {
-		_contador = std::to_string(static_cast<Health*>(_entRef->getComponent("Health"))->getLives());
+		_contador = std::to_string((int)(static_cast<Health*>(_entRef->getComponent("Health"))->getLives()));
 	}
 	else {
 		_contador = std::to_string(static_cast<Shoot*>(_entRef->getComponent("Shoot"))->getCont());

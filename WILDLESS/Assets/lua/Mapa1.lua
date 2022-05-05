@@ -1,5 +1,5 @@
 mapa1={
-    entities={"logrops", "logrorb", "platanosimagen",
+    entities={"logrops", "logrorb", "platanosimagen", "vidaimagen",
      "banana1", "banana2", "banana3","banana4", "banana5", "banana6","banana7", "banana8", -- PLATANOS
      "plat1", "plat2", "plat3", "plat4", "coin1", -- PARKOUR 1
      "pk2plat1", "pk2plat2","pk2plat3","pk2plat4","pk2plat5","coin2", --PARKOUR 2
@@ -147,8 +147,8 @@ platanosimagen = {
         OverlayName = "uiplatano",
         Name = "TURU",
         X = "887",
-        Y = "45",
-        FontSize = "80",
+        Y = "35",
+        FontSize = "150",
         Order = "300",
         Text = "Hola",
         RT = 1,
@@ -159,7 +159,39 @@ platanosimagen = {
         BD = 1,
         Begin=1,
         Entity = "mono2",
-        Tipo = "Shoot"
+        Tipo = "UIPlatano"
+    }
+}
+
+vidaimagen = {
+    Active = true,
+    Listener = false,
+    Components = {"Image", "TextRef"},
+    Image = {
+        OverlayName = "viditas",
+        Name = "health",
+        X = "50",
+        Y = "825",
+        W = "250",
+        H = "250"
+    },
+    TextRef={
+        OverlayName = "uividas",
+        Name = "TURU",
+        X = "150",
+        Y = "450",
+        FontSize = "150",
+        Order = "301",
+        Text = "Hola",
+        RT = 1,
+        GT = 0.1,
+        BT = 0.5,
+        RD = 1,
+        GD = 1,
+        BD = 1,
+        Begin=1,
+        Entity = "mono2",
+        Tipo = "UIVida"
     }
 }
 
