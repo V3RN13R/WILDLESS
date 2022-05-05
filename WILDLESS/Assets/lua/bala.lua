@@ -29,6 +29,7 @@ bala={
     SoundComponent={
         Ruta =  "./Assets/Sounds/",
         Hit = "hit.wav",
-        HitFail = "hit_fail.wav"
+        HitFail = "hit_fail.wav",
+        BananaChocar = "bananaChocar.wav"
     }
 }

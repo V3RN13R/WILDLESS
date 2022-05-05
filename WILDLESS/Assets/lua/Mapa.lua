@@ -322,7 +322,8 @@ mono2={
     Shoot={
         File = "bala.lua",
         Name = "bala",
-        NameInGame= "banana"
+        NameInGame= "banana",
+        CoolDownDisparo = "1"
     },
     SoundComponent={
         Ruta =  "./Assets/Sounds/",
@@ -822,7 +823,7 @@ tronco2={
     },      
     MeshRenderer = {
         Mesh = "tArbol2.mesh",
-        Material = "tronquito"
+        Material = "arbol/Tronco1"
     },
     Rigidbody = {
         isTrigger = "false",
