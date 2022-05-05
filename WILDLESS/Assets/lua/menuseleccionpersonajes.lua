@@ -1,26 +1,69 @@
 menuseleccionpersonajes = {
-    entities = {"fondo", "carta1", "carta2", "carta3", "exit", "camaraPrincipal2"}
+    entities = {"fondo1", "carta1", "carta2", "carta3", "camaraPrincipal3", "foto1", "foto2", "foto3"}
 }
 
-dll={
+foto1 = {
     Active = true,
     Listener = false,
-    Components={"Example"},
-    Transform = {
-        Position = "200,100,0",
-        Scale = "2,2,2",
-        Rotation = "0,0,0"
+    Components = {"Image", "Button1"},
+    Image = {
+        OverlayName = "monito1",
+        Name = "mono1",
+        X = "175",
+        Y = "242",
+        W = "400",
+        H = "415"
     },
-    Example={}
+    
+    Button1 = {
+        Callback = "mapa"
+    }
 }
 
 
-fondo = {
+foto2 = {
+    Active = true,
+    Listener = false,
+    Components = {"Image", "Button1"},
+    Image = {
+        OverlayName = "monito2",
+        Name = "mono2",
+        X = "745",
+        Y = "242",
+        W = "400",
+        H = "415"
+    },
+    
+    Button1 = {
+        Callback = "mapa"
+    }
+}
+
+
+foto3 = {
+    Active = true,
+    Listener = false,
+    Components = {"Image", "Button1"},
+    Image = {
+        OverlayName = "monito3",
+        Name = "mono3",
+        X = "1320",
+        Y = "242",
+        W = "400",
+        H = "415"
+    },
+    
+    Button1 = {
+        Callback = "mapa"
+    }
+}
+
+fondo1 = {
     Active = true,
     Listener = false,
     Components = {"Image"},
     Image = {
-        OverlayName = "imagen1",
+        OverlayName = "imagen23",
         Name = "fondoSeleccionPersonajes",
         X = "0",
         Y = "0",
@@ -35,7 +78,7 @@ carta1 = {
     Listener = false,
     Components = {"Image"},
     Image = {
-        OverlayName = "imagen2",
+        OverlayName = "imagen43",
         Name = "cartaPersonaje1",
         X = "120",
         Y = "200",
@@ -49,7 +92,7 @@ carta2 = {
     Listener = false,
     Components = {"Image"},
     Image = {
-        OverlayName = "imagen3",
+        OverlayName = "imagen33",
         Name = "cartaPersonaje2",
         X = "690",
         Y = "200",
@@ -63,7 +106,7 @@ carta3 = {
     Listener = false,
     Components = {"Image"},
     Image = {
-        OverlayName = "imagen4",
+        OverlayName = "imagen53",
         Name = "cartaPersonaje3",
         X = "1264",
         Y = "200",
@@ -72,21 +115,7 @@ carta3 = {
     }
 }
 
-exit = {
-    Active = true,
-    Listener = false,
-    Components = {"Image"},
-    Image = {
-        OverlayName = "imagen5",
-        Name = "botonAtras",
-        X = "40",
-        Y = "20",
-        W = "128",
-        H = "128"
-    }
-}
-
-camaraPrincipal2={
+camaraPrincipal3={
     Active = true,
     Listener = true,
     Components = {"Transform","Camera"},
@@ -100,7 +129,7 @@ camaraPrincipal2={
     Camera = {
         PosRel = "0,100,500",
         BackgroundColor = "0.8,0.1,0.3",
-        CameraName = "MainCamera2",
+        CameraName = "MainCamera3",
         Looking = "0,0,0",
         NearClipDistance = 1,
         FarClipDistance = 100000,
@@ -108,5 +137,3 @@ camaraPrincipal2={
         Sensibilidad = "1"
     }
 }
-
-

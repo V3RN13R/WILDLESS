@@ -29,10 +29,16 @@ void volver() {
 	//std::cout << "Vuelta a la pantalla de jugar" << "\n";
 }
 
+void mapa() {
+	VernierEngine::getInstance()->getGSM()->changeScene("Mapa.lua", "mapa", false);
+	//std::cout << "Vuelta a la pantalla de jugar" << "\n";
+}
+
 void initCallbacks() {
 	Callbacks::instance()->addMethod("menuSeleccion", menuSeleccion);
 	Callbacks::instance()->addMethod("jugar1", jugar1);
 	Callbacks::instance()->addMethod("jugar2", jugar2);
 	Callbacks::instance()->addMethod("jugar3", jugar3);
 	Callbacks::instance()->addMethod("volver", volver);
+	Callbacks::instance()->addMethod("mapa", mapa);
 }
