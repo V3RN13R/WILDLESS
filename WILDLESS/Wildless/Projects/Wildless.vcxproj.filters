@@ -66,6 +66,9 @@
     <ClCompile Include="..\Src\Patrullar.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="..\Src\RecogeBanana.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Src\WildlessDll.h">
@@ -123,6 +126,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="..\Src\Patrullar.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\RecogeBanana.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

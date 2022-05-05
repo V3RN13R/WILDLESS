@@ -1,13 +1,14 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <map>
 #include "Component.h"
 #include "WildlessDll.h"
 
 
 class Logro;
 class Entity;
-class WILDLESS_API SistemaLogros
+class WILDLESS_API SistemaLogros : public Component
 {
 private:
 	int _completados;
@@ -16,13 +17,16 @@ private:
 	std::vector<Logro*> _logros;
 
 	//Actualizar el porcentaje del progreso
-	float actualizaProgreso();
+	float actualizaProgreso();	
 
 public:
-	SistemaLogros(Entity* entidadLogro);
+	SistemaLogros(std::map<std::string, std::string> args);
+
+	void start() override;
+	void update() override;
 
 	//Se aumenta los logros completados 
-	void addCompletados() { _completados++; };
+	void addCompletados(Logro* l);
 
 	//Devuelve el progreso en porcentaje
 	float getProgresoPorcentaje() {  return actualizaProgreso(); };
@@ -33,9 +37,4 @@ public:
 	//Devuelve el numero de logros conseguidos
 	int getNumCompletados() { return _completados; };
 
-	//Muestra en pantalla el logro l completado
-	void showCompletado(Logro* l);
-
-	//Muestra en pantalla los logros completados
-	void showCompletados();
 };

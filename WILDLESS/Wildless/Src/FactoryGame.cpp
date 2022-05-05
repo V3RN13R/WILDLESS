@@ -1,6 +1,7 @@
 #include "Logro.h"
 #include "FactoryGame.h"
 #include "PrimeraSangre.h"
+#include "RecogeBanana.h"
 #include "ENGINE.h"
 #include "FactoryManager.h"
 #include "BananaMovement.h"
@@ -15,6 +16,7 @@
 #include "Merodear.h"
 #include "Enemigo.h"
 #include "Patrullar.h"
+#include "SistemaLogros.h"
 
 Component* PrimeraSangreFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
 {
@@ -75,6 +77,17 @@ Component* ShootFactory::createComponent(std::map<std::string, std::string> args
 {
     return  new Shoot(args, ent);
 };
+
+Component* RecogeBananaFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
+{
+    return  new RecogeBanana(args);
+};
+
+Component* SLFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
+{
+    return new SistemaLogros(args);
+}
+
 void initGameFactories() {
 	FactoryManager* fM = VernierEngine::getInstance()->getFactoryMng();
     fM ->addFactory("PrimeraSangre", new PrimeraSangreFactory());
@@ -89,4 +102,7 @@ void initGameFactories() {
     fM->addFactory("Enemigo", new EnemigoFactory()); //
     fM->addFactory("Merodear", new MerodearFactory()); //
     fM->addFactory("Patrullar", new PatrullarFactory()); //
+    fM->addFactory("RecogeBanana", new RecogeBananaFactory()); //
+    fM->addFactory("SistemaLogros", new SLFactory()); //
 }
+
