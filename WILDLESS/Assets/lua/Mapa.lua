@@ -448,7 +448,7 @@ palm2={
     },    
     MeshRenderer = {
         Mesh = "tPalmera1.mesh",
-        Material = "arbol/Tronco1"
+        Material = "tronquito"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -517,7 +517,7 @@ palm5={
     },    
     MeshRenderer = {
         Mesh = "tPalmera1.mesh",
-        Material = "arbol/Tronco1"
+        Material = "tronquito"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -655,7 +655,7 @@ tree3={
     },    
     MeshRenderer = {
         Mesh = "tree2.mesh",
-        Material = "arbol/Tronco1"
+        Material = "tronquito"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -678,7 +678,7 @@ tree4={
     },    
     MeshRenderer = {
         Mesh = "tree2.mesh",
-        Material = "arbol/Tronco1"
+        Material = "tronquito"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -774,7 +774,7 @@ tronco1={
     },      
     MeshRenderer = {
         Mesh = "tArbol2.mesh",
-        Material = "arbol/Tronco1"
+        Material = "tronquito"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -822,7 +822,7 @@ tronco2={
     },      
     MeshRenderer = {
         Mesh = "tArbol2.mesh",
-        Material = "arbol/Tronco1"
+        Material = "tronquito"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -870,7 +870,7 @@ tronco3={
     },      
     MeshRenderer = {
         Mesh = "tArbol2.mesh",
-        Material = "arbol/Tronco1"
+        Material = "tronquito"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -918,7 +918,7 @@ tronco4={
     },      
     MeshRenderer = {
         Mesh = "tArbol2.mesh",
-        Material = "arbol/Tronco1"
+        Material = "tronquito"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -966,7 +966,7 @@ tronco5={
     },      
     MeshRenderer = {
         Mesh = "tArbol2.mesh",
-        Material = "arbol/Tronco1"
+        Material = "tronquito"
     },
     Rigidbody = {
         isTrigger = "false",

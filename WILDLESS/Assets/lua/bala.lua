@@ -4,7 +4,7 @@ bala={
     Components = {"Transform","MeshRenderer","Rigidbody","BananaMovement", "SoundComponent"},
 
     Transform = {
-        Position = "0,100,0",
+        Position = "0,50,0",
         Scale = "10,10,10",
         Rotation = "0,0,0"
     },
@@ -19,7 +19,7 @@ bala={
         Type = "Sphere",
         Mass = "1",
         Radius = "10",
-        Position = "0,100,0"
+        Position = "0, 50,0"
     },
     BananaMovement = {
         TTL = "2",
