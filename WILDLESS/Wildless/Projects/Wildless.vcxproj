@@ -24,6 +24,7 @@
     <ClCompile Include="..\Src\MovementPlayer.cpp" />
     <ClCompile Include="..\Src\Patrullar.cpp" />
     <ClCompile Include="..\Src\Pickable.cpp" />
+    <ClCompile Include="..\Src\PickableDestroy.cpp" />
     <ClCompile Include="..\Src\Player.cpp" />
     <ClCompile Include="..\Src\PrimeraSangre.cpp" />
     <ClCompile Include="..\Src\RecogeBanana.cpp" />
@@ -47,6 +48,7 @@
     <ClInclude Include="..\Src\MovementPlayer.h" />
     <ClInclude Include="..\Src\Patrullar.h" />
     <ClInclude Include="..\Src\Pickable.h" />
+    <ClInclude Include="..\Src\PickableDestroy.h" />
     <ClInclude Include="..\Src\Player.h" />
     <ClInclude Include="..\Src\PrimeraSangre.h" />
     <ClInclude Include="..\Src\RecogeBanana.h" />

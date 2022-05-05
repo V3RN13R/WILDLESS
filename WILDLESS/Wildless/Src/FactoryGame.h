@@ -89,7 +89,13 @@ public:
 	Component* createComponent(std::map<std::string, std::string> args, Entity* ent) override;
 };
 
-class WILDLESS_API TextRefFactory : public Factory 
+class WILDLESS_API TextRefFactory : public Factory
+{
+public:
+	Component* createComponent(std::map<std::string, std::string> args, Entity* ent) override;
+};
+
+class WILDLESS_API PickableDestroyFactory : public Factory
 {
 public:
 	Component* createComponent(std::map<std::string, std::string> args, Entity* ent) override;

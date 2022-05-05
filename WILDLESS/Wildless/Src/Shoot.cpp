@@ -39,6 +39,9 @@ void Shoot::receiveEvent(int msg, Entity* e) {
 	if (msg == Message::RECOGE_BANANA) {
 		cont++;
 	}
+	if (msg == Message::RECOGE_BANANAS) {
+		cont += 3;
+	}
 }
 
 void Shoot::update()
