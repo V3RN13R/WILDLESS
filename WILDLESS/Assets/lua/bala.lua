@@ -23,7 +23,7 @@ bala={
     },
     BananaMovement = {
         TTL = "2",
-        Speed = "500",
+        Speed = "1000",
         Disparador = "camaraPrincipal"       
     },
     SoundComponent={
