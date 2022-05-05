@@ -13,6 +13,7 @@ private:
 	std::string _name;
 	std::string _nameInGame;
 	int cont = 0;
+	int num = 0;
 	SoundComponent* _sc;
 	float _lastTime;
 	float _coolDownDisparo;

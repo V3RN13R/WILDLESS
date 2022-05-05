@@ -18,7 +18,8 @@ Shoot::Shoot(std::map<std::string, std::string> args, Entity* ent) : Component(e
 
 void Shoot::dispara() {
 	if (cont > 0) {
-		Entity* en = entity_->getScene()->createEntityByPrefab(_file, _name, _nameInGame + std::to_string(cont));
+		Entity* en = entity_->getScene()->createEntityByPrefab(_file, _name, _nameInGame + std::to_string(num));
+		num++;
 		en->start();
 		en->onEnable();
 		cont--;
