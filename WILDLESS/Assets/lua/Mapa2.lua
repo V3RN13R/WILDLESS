@@ -1,5 +1,5 @@
 mapa2={
-    entities={"logrops", "logrorb",
+    entities={"logrops","logrorb", "platanosimagen", "vidaimagen",
      "banana1", "banana2", "banana3","banana4", "banana5", "banana6","banana7", "banana8", -- PLATANOS
      "plat1", "plat2", "plat3", "plat4", "coin1", -- PARKOUR 1
      "pk2plat1", "pk2plat2","pk2plat3","pk2plat4","pk2plat5","coin2", --PARKOUR 2
@@ -131,11 +131,77 @@ mapa2={
     "bq4tronco5","SL" }
 }
 
+platanosimagen = {
+    Active = true,
+    Listener = false,
+    Components = {"Image", "TextRef"},
+    Image = {
+        OverlayName = "platanitos",
+        Name = "platanos",
+        X = "1575",
+        Y = "20",
+        W = "175",
+        H = "175"
+    },
+    TextRef={
+        OverlayName = "uiplatano",
+        Name = "TURU",
+        X = "887",
+        Y = "35",
+        FontSize = "150",
+        Order = "300",
+        Text = "Hola",
+        RT = 1,
+        GT = 1,
+        BT = 0,
+        RD = 1,
+        GD = 1,
+        BD = 1,
+        Begin=1,
+        Entity = "mono2",
+        Tipo = "UIPlatano"
+    }
+}
+
+vidaimagen = {
+    Active = true,
+    Listener = false,
+    Components = {"Image", "TextRef"},
+    Image = {
+        OverlayName = "viditas",
+        Name = "health",
+        X = "50",
+        Y = "825",
+        W = "250",
+        H = "250"
+    },
+    TextRef={
+        OverlayName = "uividas",
+        Name = "TURU",
+        X = "150",
+        Y = "450",
+        FontSize = "150",
+        Order = "301",
+        Text = "Hola",
+        RT = 1,
+        GT = 0.1,
+        BT = 0.5,
+        RD = 1,
+        GD = 1,
+        BD = 1,
+        Begin=1,
+        Entity = "mono2",
+        Tipo = "UIVida"
+    }
+}
+
 SL = {
     Active=true,
     Listener=true,
     Components={"SistemaLogros"},
-    SistemaLogros={ }
+    SistemaLogros={ 
+        Callback = "ganar"
+    }
 }
 
 
@@ -412,6 +478,7 @@ banana8={
     }
 }
 
+
 -- ************************************************   PARKOUR 1   ************************************************
 
 plat1={
@@ -514,7 +581,7 @@ plat4={
 coin1={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+    Components = {"Transform","MeshRenderer", "Rigidbody", "PickableDestroy" },
 
     Transform = {
         Position = "5050,600,50",
@@ -532,7 +599,7 @@ coin1={
         Scale = "90,70,90",
         Position = "5050,600,50"
     },
-    Pickable = {
+    PickableDestroy = {
         Value = "3",
         GTime = "5"
     }
@@ -664,7 +731,7 @@ pk2plat5={
 coin2={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+    Components = {"Transform","MeshRenderer", "Rigidbody", "PickableDestroy" },
 
     Transform = {
         Position = "-3850,1000,-350",
@@ -682,7 +749,7 @@ coin2={
         Scale = "90,70,90",
         Position = "-3850,1000,-350",
     },
-    Pickable = {
+    PickableDestroy = {
         Value = "3",
         GTime = "5"
     }
@@ -838,7 +905,7 @@ pk3plat6={
 coin3={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+    Components = {"Transform","MeshRenderer", "Rigidbody", "PickableDestroy" },
 
     Transform = {
         Position = "-250,1400,-5050",
@@ -856,7 +923,7 @@ coin3={
         Scale = "90,70,90",
         Position = "-250,1400,-5050",
     },
-    Pickable = {
+    PickableDestroy = {
         Value = "3",
         GTime = "5"
     }
@@ -1035,7 +1102,7 @@ pk4plat7={
 coin4={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+    Components = {"Transform","MeshRenderer", "Rigidbody", "PickableDestroy" },
 
     Transform = {
         Position = "-350,1400,5050",
@@ -1053,7 +1120,7 @@ coin4={
         Scale = "90,70,90",
         Position = "-350,1400,5050",
     },
-    Pickable = {
+    PickableDestroy = {
         Value = "3",
         GTime = "5"
     }
@@ -1073,8 +1140,8 @@ npc = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -1108,8 +1175,8 @@ npc2 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -1142,8 +1209,8 @@ npc3 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -1305,8 +1372,8 @@ mono2={
         Scale = "50,50,50",
         Rotation = "0,90,0"
     },
-	MeshRenderer = {
-        Mesh = "mono2.mesh",
+    MeshRenderer = {
+        Mesh = "mono1.mesh",
         Material = "mono2tt"
     },
     Rigidbody = {
@@ -1319,16 +1386,17 @@ mono2={
     MovementPlayer = {
         Vel = "1",
         Entity = "camaraPrincipal",
-        Speed = 140,
-        Jump = 6
+        Speed = 400,
+        Jump = 7
     },
     Health = {
-        Lives = 4
+        Lives = 5,
+        Callback = "gameover"
     },
     Shoot={
         File = "bala.lua",
         Name = "bala",
-        NameInGame= "banana",
+        NameInGame= "bananita",
         CoolDownDisparo = "1"
     },
     SoundComponent={
@@ -2232,8 +2300,8 @@ bq2npc = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -2267,8 +2335,8 @@ bq2npc2 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -2301,8 +2369,8 @@ bq2npc3 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -3162,8 +3230,8 @@ bq3npc = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -3197,8 +3265,8 @@ bq3npc2 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -3231,8 +3299,8 @@ bq3npc3 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -4092,8 +4160,8 @@ bq4npc = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -4127,8 +4195,8 @@ bq4npc2 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
@@ -4161,8 +4229,8 @@ bq4npc3 = {
     },
 
     MeshRenderer = {
-        Mesh = "Sphere.001.mesh",
-        Material = "Practica1/rojo"
+        Mesh = "mono1.mesh",
+        Material = "mono4tt"
     },
     Rigidbody = {
         isTrigger = "false",
