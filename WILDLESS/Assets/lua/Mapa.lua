@@ -295,7 +295,7 @@ plat4={
 coin1={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable", "SoundComponent" },
 
     Transform = {
         Position = "5000,450,0",
@@ -316,6 +316,10 @@ coin1={
     Pickable = {
         Value = "1",
         GTime = "5"
+    },
+    SoundComponent = {
+        Ruta =  "./Assets/Sounds/",
+        PickBannana = "pickupPlatano.wav"
     }
 }
 
@@ -445,7 +449,7 @@ pk2plat5={
 coin2={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable","SoundComponent"  },
 
     Transform = {
         Position = "-3800,850,-300",
@@ -466,6 +470,10 @@ coin2={
     Pickable = {
         Value = "1",
         GTime = "5"
+    },
+    SoundComponent = {
+        Ruta =  "./Assets/Sounds/",
+        PickBannana = "pickupPlatano.wav"
     }
 }
 
@@ -619,7 +627,7 @@ pk3plat6={
 coin3={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable", "SoundComponent"  },
 
     Transform = {
         Position = "-300,1250,-5000",
@@ -640,6 +648,10 @@ coin3={
     Pickable = {
         Value = "1",
         GTime = "5"
+    },
+    SoundComponent = {
+        Ruta =  "./Assets/Sounds/",
+        PickBannana = "pickupPlatano.wav"
     }
 }
 
@@ -816,7 +828,7 @@ pk4plat7={
 coin4={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable", "SoundComponent"  },
 
     Transform = {
         Position = "-300,1250,5000",
@@ -837,6 +849,10 @@ coin4={
     Pickable = {
         Value = "1",
         GTime = "5"
+    },
+    SoundComponent = {
+        Ruta =  "./Assets/Sounds/",
+        PickBannana = "pickupPlatano.wav"
     }
 }
 
