@@ -206,14 +206,14 @@ plat1={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "1000,100,0"
     },
     Ground = {}
@@ -231,14 +231,14 @@ plat2={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "2000,200,0"
     },
     Ground = {}
@@ -255,14 +255,14 @@ plat3={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "3000,300,0"
     },
     Ground = {}
@@ -279,14 +279,14 @@ plat4={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "5000,300,0"
     },
     Ground = {}
@@ -332,14 +332,14 @@ pk2plat1={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-1000,100,100",
     },
     Ground = {}
@@ -357,14 +357,14 @@ pk2plat2={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-2000,300,-100",
     },
     Ground = {}
@@ -381,14 +381,14 @@ pk2plat3={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-2500,600,50",
     },
     Ground = {}
@@ -405,14 +405,14 @@ pk2plat4={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-4500,400,-150",
     },
     Ground = {}
@@ -429,14 +429,14 @@ pk2plat5={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-3800,700,-300",
     },
     Ground = {}
@@ -482,14 +482,14 @@ pk3plat1={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-100,100,-1000",
     },
     Ground = {}
@@ -507,14 +507,14 @@ pk3plat2={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-100,100,-2000",
     },
     Ground = {}
@@ -531,14 +531,14 @@ pk3plat3={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "50,400,-2500",
     },
     Ground = {}
@@ -555,14 +555,14 @@ pk3plat4={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-150,400,-4500",
     },
     Ground = {}
@@ -579,14 +579,14 @@ pk3plat5={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-300,700,-3800",
     },
     Ground = {}
@@ -603,14 +603,14 @@ pk3plat6={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-300,1100,-5000",
     },
     Ground = {}
@@ -656,14 +656,14 @@ pk4plat1={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-100,150,1000",
     },
     Ground = {}
@@ -681,14 +681,14 @@ pk4plat2={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-100,150,2000",
     },
     Ground = {}
@@ -705,14 +705,14 @@ pk4plat3={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-50,450,2500",
     },
     Ground = {}
@@ -729,14 +729,14 @@ pk4plat4={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-150,450,4500",
     },
     Ground = {}
@@ -753,14 +753,14 @@ pk4plat5={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "300,750,3800",
     },
     Ground = {}
@@ -777,14 +777,14 @@ pk4plat6={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "0,950,4500",
     },
     Ground = {}
@@ -801,14 +801,14 @@ pk4plat7={
         Rotation = "0,0,0"
     },    
     MeshRenderer = {
-        Mesh = "roca5.mesh",
+        Mesh = "piedra.mesh",
         Material = "Material/piedra"
     },
     Rigidbody = {
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "200,100,200",
+        Scale = "150,100,150",
         Position = "-300,1100,5000",
     },
     Ground = {}
@@ -981,7 +981,7 @@ luz = {
         Scale = "1,1,1",
         Rotation = "0,0,0"
     },
-	
+    
     Light = {
         LightType = "DIRECTIONAL_LIGHT",
         Distance = 100000,
@@ -994,7 +994,7 @@ luz = {
         OuterAngle = 60,
         On = 1
     }
-	
+    
 }
 
 mono2={
@@ -1010,8 +1010,8 @@ mono2={
         Scale = "50,50,50",
         Rotation = "0,90,0"
     },
-	
-	MeshRenderer = {
+    
+    MeshRenderer = {
         Mesh = "Sphere.001.mesh"
     },
     Rigidbody = {
@@ -1055,8 +1055,8 @@ suelo={
         Scale = "1000,1000,1000",
         Rotation = "-90,0,0"
     },
-	
-	MeshRenderer = {
+    
+    MeshRenderer = {
         Mesh = "Plane",
         Material = "Practica1/marron"
     },
@@ -1426,7 +1426,7 @@ tree6={
 copa1={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "1500,1300,1000",
@@ -1443,14 +1443,13 @@ copa1={
         Mass = "0",
         Scale = "100,100,100",
         Position = "1500,1300,1000"
-    },
-    Ground = {}
+    }
 }
 
 tronco1={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "1500,10,1000",
@@ -1465,16 +1464,15 @@ tronco1={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "1500,10,1000"
-    },
-    Ground = {}
+    }
 }
 
 copa2={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "3200,1300,2000",
@@ -1491,14 +1489,13 @@ copa2={
         Mass = "0",
         Scale = "100,100,100",
         Position = "3200,1300,2000"
-    },
-    Ground = {}
+    }
 }
 
 tronco2={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "3200,10,2000",
@@ -1513,16 +1510,15 @@ tronco2={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "3200,10,2000"
-    },
-    Ground = {}
+    }
 }
 
 copa3={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "2400,1300,3200",
@@ -1539,14 +1535,13 @@ copa3={
         Mass = "0",
         Scale = "100,100,100",
         Position = "2400,1300,3200"
-    },
-    Ground = {}
+    }
 }
 
 tronco3={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "2400,10,3200",
@@ -1561,16 +1556,15 @@ tronco3={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "2400,10,3200"
-    },
-    Ground = {}
+    }
 }
 
 copa4={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "4100,1300,2800",
@@ -1587,14 +1581,13 @@ copa4={
         Mass = "0",
         Scale = "100,100,100",
         Position = "4100,1300,2800"
-    },
-    Ground = {}
+    }
 }
 
 tronco4={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "4100,10,2800",
@@ -1609,16 +1602,15 @@ tronco4={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "4100,10,2800"
-    },
-    Ground = {}
+    }
 }
 
 copa5={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "1000,1300,3400",
@@ -1635,14 +1627,13 @@ copa5={
         Mass = "0",
         Scale = "100,100,100",
         Position = "1000,1300,3400"
-    },
-    Ground = {}
+    }
 }
 
 tronco5={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "1000,10,3400",
@@ -1657,10 +1648,9 @@ tronco5={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "1000,10,3400"
-    },
-    Ground = {}
+    }
 }
 
 
@@ -2366,7 +2356,7 @@ bq2tree6={
 bq2copa1={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-1500,1300,1000",
@@ -2383,14 +2373,13 @@ bq2copa1={
         Mass = "0",
         Scale = "100,100,100",
         Position = "-1500,1300,1000"
-    },
-    Ground = {}
+    }
 }
 
 bq2tronco1={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-1500,10,1000",
@@ -2405,16 +2394,15 @@ bq2tronco1={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "-1500,10,1000"
-    },
-    Ground = {}
+    }
 }
 
 bq2copa2={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-3200,1300,2000",
@@ -2431,14 +2419,13 @@ bq2copa2={
         Mass = "0",
         Scale = "100,100,100",
         Position = "-3200,1300,2000"
-    },
-    Ground = {}
+    }
 }
 
 bq2tronco2={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-3200,10,2000",
@@ -2453,16 +2440,15 @@ bq2tronco2={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "-3200,10,2000"
-    },
-    Ground = {}
+    }
 }
 
 bq2copa3={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-2400,1300,3200",
@@ -2479,14 +2465,13 @@ bq2copa3={
         Mass = "0",
         Scale = "100,100,100",
         Position = "-2400,1300,3200"
-    },
-    Ground = {}
+    }
 }
 
 bq2tronco3={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-2400,10,3200",
@@ -2501,16 +2486,15 @@ bq2tronco3={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "-2400,10,3200"
-    },
-    Ground = {}
+    }
 }
 
 bq2copa4={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-4100,1300,2800",
@@ -2527,14 +2511,13 @@ bq2copa4={
         Mass = "0",
         Scale = "100,100,100",
         Position = "-4100,1300,2800"
-    },
-    Ground = {}
+    }
 }
 
 bq2tronco4={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-4100,10,2800",
@@ -2549,16 +2532,15 @@ bq2tronco4={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "-4100,10,2800"
-    },
-    Ground = {}
+    }
 }
 
 bq2copa5={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-1000,1300,3400",
@@ -2575,14 +2557,13 @@ bq2copa5={
         Mass = "0",
         Scale = "100,100,100",
         Position = "-1000,1300,3400"
-    },
-    Ground = {}
+    }
 }
 
 bq2tronco5={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-1000,10,3400",
@@ -2597,10 +2578,9 @@ bq2tronco5={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "-1000,10,3400"
-    },
-    Ground = {}
+    }
 }
 
 
@@ -3306,7 +3286,7 @@ bq3tree6={
 bq3copa1={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "1500,1300,-1000",
@@ -3323,14 +3303,13 @@ bq3copa1={
         Mass = "0",
         Scale = "100,100,100",
         Position = "1500,1300,-1000"
-    },
-    Ground = {}
+    }
 }
 
 bq3tronco1={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "1500,10,-1000",
@@ -3345,16 +3324,15 @@ bq3tronco1={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "1500,10,-1000"
-    },
-    Ground = {}
+    }
 }
 
 bq3copa2={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "3200,1300,-2000",
@@ -3371,14 +3349,13 @@ bq3copa2={
         Mass = "0",
         Scale = "100,100,100",
         Position = "3200,1300,-2000"
-    },
-    Ground = {}
+    }
 }
 
 bq3tronco2={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "3200,10,-2000",
@@ -3393,16 +3370,15 @@ bq3tronco2={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "3200,10,-2000"
-    },
-    Ground = {}
+    }
 }
 
 bq3copa3={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "2400,1300,-3200",
@@ -3419,14 +3395,13 @@ bq3copa3={
         Mass = "0",
         Scale = "100,100,100",
         Position = "2400,1300,-3200"
-    },
-    Ground = {}
+    }
 }
 
 bq3tronco3={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "2400,10,-3200",
@@ -3441,16 +3416,15 @@ bq3tronco3={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "2400,10,-3200"
-    },
-    Ground = {}
+    }
 }
 
 bq3copa4={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "4100,1300,-2800",
@@ -3467,14 +3441,13 @@ bq3copa4={
         Mass = "0",
         Scale = "100,100,100",
         Position = "4100,1300,-2800"
-    },
-    Ground = {}
+    }
 }
 
 bq3tronco4={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "4100,10,-2800",
@@ -3489,16 +3462,15 @@ bq3tronco4={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "4100,10,-2800"
-    },
-    Ground = {}
+    }
 }
 
 bq3copa5={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "1000,1300,-3400",
@@ -3515,14 +3487,13 @@ bq3copa5={
         Mass = "0",
         Scale = "100,100,100",
         Position = "1000,1300,-3400"
-    },
-    Ground = {}
+    }
 }
 
 bq3tronco5={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "1000,10,-3400",
@@ -3537,10 +3508,9 @@ bq3tronco5={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "1000,10,-3400"
-    },
-    Ground = {}
+    }
 }
 
 
@@ -4246,7 +4216,7 @@ bq4tree6={
 bq4copa1={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-1500,1300,-1000",
@@ -4263,14 +4233,13 @@ bq4copa1={
         Mass = "0",
         Scale = "100,100,100",
         Position = "-1500,1300,-1000"
-    },
-    Ground = {}
+    }
 }
 
 bq4tronco1={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-1500,10,-1000",
@@ -4285,16 +4254,15 @@ bq4tronco1={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "-1500,10,-1000"
-    },
-    Ground = {}
+    }
 }
 
 bq4copa2={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-3200,1300,-2000",
@@ -4311,14 +4279,13 @@ bq4copa2={
         Mass = "0",
         Scale = "100,100,100",
         Position = "-3200,1300,-2000"
-    },
-    Ground = {}
+    }
 }
 
 bq4tronco2={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-3200,10,-2000",
@@ -4333,16 +4300,15 @@ bq4tronco2={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "-3200,10,-2000"
-    },
-    Ground = {}
+    }
 }
 
 bq4copa3={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-2400,1300,-3200",
@@ -4359,14 +4325,13 @@ bq4copa3={
         Mass = "0",
         Scale = "100,100,100",
         Position = "-2400,1300,-3200"
-    },
-    Ground = {}
+    }
 }
 
 bq4tronco3={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-2400,10,-3200",
@@ -4381,16 +4346,15 @@ bq4tronco3={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "-2400,10,-3200"
-    },
-    Ground = {}
+    }
 }
 
 bq4copa4={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-4100,1300,-2800",
@@ -4407,14 +4371,13 @@ bq4copa4={
         Mass = "0",
         Scale = "100,100,100",
         Position = "-4100,1300,-2800"
-    },
-    Ground = {}
+    }
 }
 
 bq4tronco4={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-4100,10,-2800",
@@ -4429,16 +4392,15 @@ bq4tronco4={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "-4100,10,-2800"
-    },
-    Ground = {}
+    }
 }
 
 bq4copa5={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-1000,1300,-3400",
@@ -4455,14 +4417,13 @@ bq4copa5={
         Mass = "0",
         Scale = "100,100,100",
         Position = "-1000,1300,-3400"
-    },
-    Ground = {}
+    }
 }
 
 bq4tronco5={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+    Components = {"Transform","MeshRenderer", "Rigidbody"},
 
     Transform = {
         Position = "-1000,10,-3400",
@@ -4477,10 +4438,9 @@ bq4tronco5={
         isTrigger = "false",
         Type = "Box",
         Mass = "0",
-        Scale = "100,100,100",
+        Scale = "50,1200,50",
         Position = "-1000,10,-3400"
-    },
-    Ground = {}
+    }
 }
 
 
