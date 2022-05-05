@@ -16,4 +16,5 @@ public:
 
 private:
 	float _lives;
+	bool _dead;
 };
