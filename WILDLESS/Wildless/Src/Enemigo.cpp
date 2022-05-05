@@ -79,6 +79,7 @@ void Enemigo::update() {
 		_mesh->setVisible(true);
 		_rb->setEnable(true);
 		if(_patrulleo)_patrulleo->setEnable(true);
+		if(_merodeo)_merodeo->setEnable(true);
 		_rb->resetTransform(_posIni, 0, 0, 0, 0);
 		_tr->setPosition(_posIni);
 		_lastTime = currentTime;
