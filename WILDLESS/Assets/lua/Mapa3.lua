@@ -1,5 +1,6 @@
 mapa3={
     entities={"logrops", "logrorb",
+     "banana1", "banana2", "banana3","banana4", "banana5", "banana6","banana7", "banana8", -- PLATANOS
      "plat1", "plat2", "plat3", "plat4", "coin1", -- PARKOUR 1
      "pk2plat1", "pk2plat2","pk2plat3","pk2plat4","pk2plat5","coin2", --PARKOUR 2
      "pk3plat1", "pk3plat2", "pk3plat3", "pk3plat4", "pk3plat5","pk3plat6", "coin3", --PARKOUR 3
@@ -189,6 +190,225 @@ logrorb={
         GD = 0,
         BD = 0,
         Begin=0
+    }
+}
+
+
+-- ************************************************   PLATANOS   *************************************************
+
+banana1={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+
+    Transform = {
+        Position = "1200,50,-3500",
+        Scale = "20,20,20",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
+    },
+    Rigidbody = {
+        isTrigger = "true",
+        Type = "Box",
+        Mass = "0",
+        Scale = "90,70,90",
+        Position = "1200,50,-3500"
+    },
+    Pickable = {
+        Value = "1",
+        GTime = "5"
+    }
+}
+
+banana2={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+
+    Transform = {
+        Position = "-800,50,-1700",
+        Scale = "20,20,20",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
+    },
+    Rigidbody = {
+        isTrigger = "true",
+        Type = "Box",
+        Mass = "0",
+        Scale = "90,70,90",
+        Position = "-800,50,-1700"
+    },
+    Pickable = {
+        Value = "1",
+        GTime = "5"
+    }
+}
+
+banana3={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+
+    Transform = {
+        Position = "-3300,50,2300",
+        Scale = "20,20,20",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
+    },
+    Rigidbody = {
+        isTrigger = "true",
+        Type = "Box",
+        Mass = "0",
+        Scale = "90,70,90",
+        Position = "-3300,50,2300"
+    },
+    Pickable = {
+        Value = "1",
+        GTime = "5"
+    }
+}
+
+banana4={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+
+    Transform = {
+        Position = "2700,50,1500",
+        Scale = "20,20,20",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
+    },
+    Rigidbody = {
+        isTrigger = "true",
+        Type = "Box",
+        Mass = "0",
+        Scale = "90,70,90",
+        Position = "2700,50,1500"
+    },
+    Pickable = {
+        Value = "1",
+        GTime = "5"
+    }
+}
+
+banana5={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+
+    Transform = {
+        Position = "3400,50,-1400",
+        Scale = "20,20,20",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
+    },
+    Rigidbody = {
+        isTrigger = "true",
+        Type = "Box",
+        Mass = "0",
+        Scale = "90,70,90",
+        Position = "3400,50,-1400"
+    },
+    Pickable = {
+        Value = "1",
+        GTime = "5"
+    }
+}
+
+banana6={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+
+    Transform = {
+        Position = "500,50,2200",
+        Scale = "20,20,20",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
+    },
+    Rigidbody = {
+        isTrigger = "true",
+        Type = "Box",
+        Mass = "0",
+        Scale = "90,70,90",
+        Position = "500,50,2200"
+    },
+    Pickable = {
+        Value = "1",
+        GTime = "5"
+    }
+}
+
+banana7={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+
+    Transform = {
+        Position = "-3500,50,900",
+        Scale = "20,20,20",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
+    },
+    Rigidbody = {
+        isTrigger = "true",
+        Type = "Box",
+        Mass = "0",
+        Scale = "90,70,90",
+        Position = "-3500,50,900"
+    },
+    Pickable = {
+        Value = "1",
+        GTime = "5"
+    }
+}
+
+banana8={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+
+    Transform = {
+        Position = "-3200,50,-3200",
+        Scale = "20,20,20",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
+    },
+    Rigidbody = {
+        isTrigger = "true",
+        Type = "Box",
+        Mass = "0",
+        Scale = "90,70,90",
+        Position = "-3200,50,-3200"
+    },
+    Pickable = {
+        Value = "1",
+        GTime = "5"
     }
 }
 
