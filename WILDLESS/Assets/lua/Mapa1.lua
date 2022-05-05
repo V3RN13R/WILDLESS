@@ -1,5 +1,5 @@
 mapa1={
-    entities={"logrops", "logrorb", "platanosimagen", "vidaimagen",
+    entities={"logrops","logrorb", "platanosimagen", "vidaimagen",
      "banana1", "banana2", "banana3","banana4", "banana5", "banana6","banana7", "banana8", -- PLATANOS
      "plat1", "plat2", "plat3", "plat4", "coin1", -- PARKOUR 1
      "pk2plat1", "pk2plat2","pk2plat3","pk2plat4","pk2plat5","coin2", --PARKOUR 2
@@ -199,7 +199,9 @@ SL = {
     Active=true,
     Listener=true,
     Components={"SistemaLogros"},
-    SistemaLogros={ }
+    SistemaLogros={ 
+        Callback = "ganar"
+    }
 }
 
 
@@ -579,7 +581,7 @@ plat4={
 coin1={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+    Components = {"Transform","MeshRenderer", "Rigidbody", "PickableDestroy" },
 
     Transform = {
         Position = "5050,600,50",
@@ -597,7 +599,7 @@ coin1={
         Scale = "90,70,90",
         Position = "5050,600,50"
     },
-    Pickable = {
+    PickableDestroy = {
         Value = "3",
         GTime = "5"
     }
@@ -729,7 +731,7 @@ pk2plat5={
 coin2={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+    Components = {"Transform","MeshRenderer", "Rigidbody", "PickableDestroy" },
 
     Transform = {
         Position = "-3850,1000,-350",
@@ -747,7 +749,7 @@ coin2={
         Scale = "90,70,90",
         Position = "-3850,1000,-350",
     },
-    Pickable = {
+    PickableDestroy = {
         Value = "3",
         GTime = "5"
     }
@@ -903,7 +905,7 @@ pk3plat6={
 coin3={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+    Components = {"Transform","MeshRenderer", "Rigidbody", "PickableDestroy" },
 
     Transform = {
         Position = "-250,1400,-5050",
@@ -921,7 +923,7 @@ coin3={
         Scale = "90,70,90",
         Position = "-250,1400,-5050",
     },
-    Pickable = {
+    PickableDestroy = {
         Value = "3",
         GTime = "5"
     }
@@ -1100,7 +1102,7 @@ pk4plat7={
 coin4={
     Active = true,
     Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+    Components = {"Transform","MeshRenderer", "Rigidbody", "PickableDestroy" },
 
     Transform = {
         Position = "-350,1400,5050",
@@ -1118,7 +1120,7 @@ coin4={
         Scale = "90,70,90",
         Position = "-350,1400,5050",
     },
-    Pickable = {
+    PickableDestroy = {
         Value = "3",
         GTime = "5"
     }
@@ -1384,11 +1386,12 @@ mono2={
     MovementPlayer = {
         Vel = "1",
         Entity = "camaraPrincipal",
-        Speed = 140,
-        Jump = 6
+        Speed = 500,
+        Jump = 8
     },
     Health = {
-        Lives = 4
+        Lives = 4,
+        Callback = "gameover"
     },
     Shoot={
         File = "bala.lua",

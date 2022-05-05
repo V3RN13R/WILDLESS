@@ -4,6 +4,7 @@
 #include <map>
 #include "Component.h"
 #include "WildlessDll.h"
+#include <functional>
 
 
 class Logro;
@@ -15,6 +16,8 @@ private:
 	int _nLogros;
 	float _progreso;
 	std::vector<Logro*> _logros;
+	std::string _callbackName;
+	std::function<void()> _callback;
 
 	//Actualizar el porcentaje del progreso
 	float actualizaProgreso();	
@@ -36,5 +39,7 @@ public:
 
 	//Devuelve el numero de logros conseguidos
 	int getNumCompletados() { return _completados; };
+
+	void setCallback();
 
 };

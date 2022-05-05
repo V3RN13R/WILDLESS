@@ -1,19 +1,27 @@
 #include "Health.h"
-//#include "checkML.h"
 #include <iostream>
+#include "Callbacks.h"
 
-Health::Health(std::map<std::string, std::string> args) : _lives(stof(args["Lives"]))
-{	
+Health::Health(std::map<std::string, std::string> args) : _lives(stof(args["Lives"])), _callbackName(args["Callback"])
+{
 }
 
-void Health::loseLives()
-{
-	_lives--;
-	_dead = _lives < 1;
-	std::cout << "pierdevida";
+void Health::loseLives() {
+    _lives--;
+    std::cout << "pierdevida";
 }
 
-bool Health::isDead()
-{
-	return _dead;
+void Health::start() {
+    setCallback();
+}
+
+void Health::update() {
+    if (_lives <= 0) {
+        if (callback != nullptr)
+            callback();
+    }
+}
+
+void Health::setCallback() {
+    callback = Callbacks::instance()->getMethod(_callbackName);
 }

@@ -3,9 +3,11 @@
 #include "Logro.h"
 #include "ENGINE.h"
 #include "GameStateMachine.h"
+#include "CallbacksGame.h"
+#include "Callbacks.h"
 #include "Scene.h"
 
-SistemaLogros::SistemaLogros(std::map<std::string, std::string> args) {
+SistemaLogros::SistemaLogros(std::map<std::string, std::string> args): _callbackName(args["Callback"]) {
 
 	_completados = 0;
 	_progreso = 0;
@@ -25,11 +27,18 @@ void SistemaLogros::start()
 			}
 		}
 	}
+	setCallback();
 }
 
 void SistemaLogros::update()
 {
+	if (_completados >= _nLogros)
+		_callback();
+}
 
+void SistemaLogros::setCallback()
+{	
+	_callback = Callbacks::instance()->getMethod(_callbackName);
 }
 
 float SistemaLogros::actualizaProgreso()
