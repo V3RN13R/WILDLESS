@@ -1,4 +1,4 @@
-// ARCHIVO PARA DEFINIR LOS CALLBACKSvoid initCallbacks();
+// ARCHIVO PARA DEFINIR LOS CALLBACKS
 void menuSeleccion();
 void jugar1();
 void jugar2();

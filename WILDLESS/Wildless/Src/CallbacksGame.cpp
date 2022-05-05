@@ -10,17 +10,17 @@ void menuSeleccion() {
 }
 
 void jugar1() {
-	VernierEngine::getInstance()->getGSM()->changeScene("jugar1.lua", "jugar1", false);
+	VernierEngine::getInstance()->getGSM()->changeScene("Mapa1.lua", "mapa1", false);
 	//std::cout << "Cambiado a pantalla de jugar" << "\n";
 }
 
 void jugar2() {
-	VernierEngine::getInstance()->getGSM()->changeScene("jugar2.lua", "jugar2", false);
+	VernierEngine::getInstance()->getGSM()->changeScene("Mapa2.lua", "mapa2", false);
 	//std::cout << "Cambiado a pantalla de jugar" << "\n";
 }
 
 void jugar3() {
-	VernierEngine::getInstance()->getGSM()->changeScene("jugar3.lua", "jugar3", false);
+	VernierEngine::getInstance()->getGSM()->changeScene("Mapa3.lua", "mapa3", false);
 	//std::cout << "Cambiado a pantalla de jugar" << "\n";
 }
 
