@@ -64,7 +64,7 @@ settings = {
 exit = {
     Active = true,
     Listener = false,
-    Components = {"Image"},
+    Components = {"Image","Button1"},
     Image = {
         OverlayName = "imagen4",
         Name = "exit",
@@ -72,6 +72,9 @@ exit = {
         Y = "70",
         W = "512",
         H = "256"
+    },
+    Button1 = {
+        Callback = "close"
     }
 }
 

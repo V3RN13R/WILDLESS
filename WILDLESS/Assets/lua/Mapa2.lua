@@ -205,6 +205,33 @@ SL = {
 }
 
 
+logrotm={
+    Active=true,
+    Listener=true,
+    Components={"ParkourRecolect","Text"},
+    ParkourRecolect={
+        Nombre="Trotamundos",
+        Desc= "Has completado todos los parkours",
+        MFinal="4"
+    },
+    Text={
+        OverlayName = "textotm",
+        Name = "TURU",
+        X = "0",
+        Y = "0",
+        FontSize = "60",
+        Order = "0",
+        Text = "",
+        RT = 0,
+        GT = 0,
+        BT = 0,
+        RD = 0,
+        GD = 0,
+        BD = 0,
+        Begin=0
+    }
+}
+
 logrops={
     Active=true,
     Listener=true,
