@@ -1,6 +1,7 @@
 #include "Shoot.h"
 #include "Scene.h"
 #include "Utils.h"
+#include "GameUtils.h"
 #include "InputManager.h"
 //#include "checkML.h"
 #include "SoundComponent.h"
@@ -16,13 +17,15 @@ Shoot::Shoot(std::map<std::string, std::string> args, Entity* ent) : Component(e
 }
 
 void Shoot::dispara() {
-	Entity* en = entity_->getScene()->createEntityByPrefab(_file, _name, _nameInGame + std::to_string(cont));
-	en->start();
-	en->onEnable();
-	cont++;
-	_disparoDisponible = false;
-	if(_sc)
-		_sc->playsound("Shoot", 0.75f);
+	if (cont > 0) {
+		Entity* en = entity_->getScene()->createEntityByPrefab(_file, _name, _nameInGame + std::to_string(cont));
+		en->start();
+		en->onEnable();
+		cont--;
+		_disparoDisponible = false;
+		if (_sc)
+			_sc->playsound("Shoot", 0.75f);
+	}
 }
 
 void Shoot::receiveEvent(int msg, Entity* e) {
@@ -31,9 +34,9 @@ void Shoot::receiveEvent(int msg, Entity* e) {
 			dispara();
 			_lastTime = VernierEngine::getInstance()->getTime()->Time();
 		}
-		
-
-
+	}
+	if (msg == Message::RECOGE_BANANA) {
+		cont++;
 	}
 }
 
