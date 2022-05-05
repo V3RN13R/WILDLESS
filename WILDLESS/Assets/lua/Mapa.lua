@@ -127,10 +127,18 @@ mapa={
     "bq4copa4", 
     "bq4tronco4", 
     "bq4copa5", 
-    "bq4tronco5" }
+    "bq4tronco5","SL" }
 }
 
-logros={
+SL = {
+    Active=true,
+    Listener=true,
+    Components={"SistemaLogros"},
+    SistemaLogros={ }
+}
+
+
+logrops={
     Active=true,
     Listener=true,
     Components={"PrimeraSangre","Text"},
@@ -140,13 +148,13 @@ logros={
         MFinal="1"
     },
     Text={
-        OverlayName = "texto1",
-        Name = "Gemstone",
+        OverlayName = "textops",
+        Name = "TURU",
         X = "0",
         Y = "0",
         FontSize = "60",
         Order = "100",
-        Text = "Hola 23",
+        Text = "",
         RT = 0,
         GT = 0,
         BT = 0,
@@ -156,6 +164,34 @@ logros={
         Begin=0
     }
 }
+
+logrorb={
+    Active=true,
+    Listener=true,
+    Components={"RecogeBanana","Text"},
+    RecogeBanana={
+        Nombre="Recolector",
+        Desc= "Recoge tu primera banana",
+        MFinal="1"
+    },
+    Text={
+        OverlayName = "textorb",
+        Name = "TURU",
+        X = "0",
+        Y = "0",
+        FontSize = "60",
+        Order = "101",
+        Text = "",
+        RT = 0,
+        GT = 0,
+        BT = 0,
+        RD = 0,
+        GD = 0,
+        BD = 0,
+        Begin=0
+    }
+}
+
 
 -- ************************************************   PARKOUR 1   ************************************************
 
