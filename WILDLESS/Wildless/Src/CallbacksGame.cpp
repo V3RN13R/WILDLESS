@@ -4,6 +4,11 @@
 #include "ENGINE.h"
 #include <iostream>
 
+void menuPrincipal() {
+	VernierEngine::getInstance()->getGSM()->changeScene("menuprincipalfinal.lua", "menuprincipalfinal", false);
+	//std::cout << "Cambiado a menú selección de personajes" << "\n";
+}
+
 void menuSeleccion() {
 	VernierEngine::getInstance()->getGSM()->changeScene("menuseleccionpersonajes.lua", "menuseleccionpersonajes", false);
 	//std::cout << "Cambiado a menú selección de personajes" << "\n";
@@ -35,6 +40,7 @@ void mapa() {
 }
 
 void initCallbacks() {
+	Callbacks::instance()->addMethod("menuPrincipal", menuPrincipal);
 	Callbacks::instance()->addMethod("menuSeleccion", menuSeleccion);
 	Callbacks::instance()->addMethod("jugar1", jugar1);
 	Callbacks::instance()->addMethod("jugar2", jugar2);
