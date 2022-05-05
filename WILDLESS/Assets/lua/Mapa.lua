@@ -1,5 +1,10 @@
 mapa={
-    entities={"logros", "plat1", "plat2", "plat3", "plat4","mono2", "suelo","camaraPrincipal", "luz", "obs1",
+    entities={"logros",
+     "plat1", "plat2", "plat3", "plat4", -- PARKOUR 1
+     "pk2plat1", "pk2plat2","pk2plat3","pk2plat4","pk2plat5", --PARKOUR 2
+     "pk3plat1", "pk3plat2", "pk3plat3", "pk3plat4", "pk3plat5","pk3plat6",  --PARKOUR 3
+     "pk4plat1", "pk4plat2", "pk4plat3", "pk4plat4", "pk4plat5", "pk4plat6", "pk4plat7",--PARKOUR 4
+     "mono2", "suelo","camaraPrincipal", "luz", "obs1",
     "npc", "npc2", "npc3", "coin1", "palm1", "palm2", "palm3", "palm4", "palm5", "palm6", "palm7",
     "palm8", "palm9", "tree2", "tree3", "tree4", "tree5", "tree6", "rock1", "rock2", 
     "rock3", "rock4", "rock5", "rock6", "rock7", "rock8", "rock9", "rock10", "rock11",
@@ -33,6 +38,8 @@ logros={
         Begin=0
     }
 }
+
+-- ************************************************   PARKOUR 1   ************************************************
 
 plat1={
     Active = true,
@@ -130,6 +137,448 @@ plat4={
     },
     Ground = {}
 }
+
+-- ************************************************   PARKOUR 2   ************************************************
+
+pk2plat1={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-1000,100,100",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "-1000,100,100",
+    },
+    Ground = {}
+}
+
+
+pk2plat2={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-2000,300,-100",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "-2000,300,-100",
+    },
+    Ground = {}
+}
+
+pk2plat3={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-2500,600,50",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,-200",
+        Position = "-2500,600,50",
+    },
+    Ground = {}
+}
+
+pk2plat4={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-4500,400,-150",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "-4500,400,-150",
+    },
+    Ground = {}
+}
+
+pk2plat5={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-3800,700,-300",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "-3800,700,-300",
+    },
+    Ground = {}
+}
+
+-- ************************************************   PARKOUR 3   ************************************************
+
+pk3plat1={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-100,100,-1000",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "-100,100,-1000",
+    },
+    Ground = {}
+}
+
+
+pk3plat2={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-100,100,-2000",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "-100,100,-2000",
+    },
+    Ground = {}
+}
+
+pk3plat3={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "50,400,-2500",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,-200",
+        Position = "50,400,-2500",
+    },
+    Ground = {}
+}
+
+pk3plat4={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-150,400,-4500",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "-150,400,-4500",
+    },
+    Ground = {}
+}
+
+pk3plat5={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-300,700,-3800",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "-300,700,-3800",
+    },
+    Ground = {}
+}
+
+pk3plat6={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-300,1100,-5000",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "-300,1100,-5000",
+    },
+    Ground = {}
+}
+
+-- ************************************************   PARKOUR 4   ************************************************
+
+pk4plat1={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-100,150,1000",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "-100,150,1000",
+    },
+    Ground = {}
+}
+
+
+pk4plat2={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-100,150,2000",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "-100,150,2000",
+    },
+    Ground = {}
+}
+
+pk4plat3={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-50,450,2500",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,-200",
+        Position = "-50,450,2500",
+    },
+    Ground = {}
+}
+
+pk4plat4={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-150,450,4500",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "-150,450,4500",
+    },
+    Ground = {}
+}
+
+pk4plat5={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "300,750,3800",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "300,750,3800",
+    },
+    Ground = {}
+}
+
+pk4plat6={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "0,950,4500",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "0,950,4500",
+    },
+    Ground = {}
+}
+
+pk4plat7={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Ground"},
+
+    Transform = {
+        Position = "-300,1100,5000",
+        Scale = "200,100,200",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "roca5.mesh",
+        Material = "Material/piedra"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "200,100,200",
+        Position = "-300,1100,5000",
+    },
+    Ground = {}
+}
+
 
 npc = {
     Active = true,
