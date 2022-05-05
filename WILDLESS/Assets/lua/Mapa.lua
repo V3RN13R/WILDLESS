@@ -1,11 +1,11 @@
 mapa={
     entities={"logros",
-     "plat1", "plat2", "plat3", "plat4", -- PARKOUR 1
-     "pk2plat1", "pk2plat2","pk2plat3","pk2plat4","pk2plat5", --PARKOUR 2
-     "pk3plat1", "pk3plat2", "pk3plat3", "pk3plat4", "pk3plat5","pk3plat6",  --PARKOUR 3
-     "pk4plat1", "pk4plat2", "pk4plat3", "pk4plat4", "pk4plat5", "pk4plat6", "pk4plat7",--PARKOUR 4
+     "plat1", "plat2", "plat3", "plat4", "coin1", -- PARKOUR 1
+     "pk2plat1", "pk2plat2","pk2plat3","pk2plat4","pk2plat5","coin2", --PARKOUR 2
+     "pk3plat1", "pk3plat2", "pk3plat3", "pk3plat4", "pk3plat5","pk3plat6", "coin3", --PARKOUR 3
+     "pk4plat1", "pk4plat2", "pk4plat3", "pk4plat4", "pk4plat5", "pk4plat6", "pk4plat7","coin4",--PARKOUR 4
      "mono2", "suelo","camaraPrincipal", "luz", "obs1",
-    "npc", "npc2", "npc3", "coin1", "palm1", "palm2", "palm3", "palm4", "palm5", "palm6", "palm7",
+    "npc", "npc2", "npc3", "palm1", "palm2", "palm3", "palm4", "palm5", "palm6", "palm7",
     "palm8", "palm9", "tree2", "tree3", "tree4", "tree5", "tree6", "rock1", "rock2", 
     "rock3", "rock4", "rock5", "rock6", "rock7", "rock8", "rock9", "rock10", "rock11",
     "copa1", "tronco1", "copa2", "tronco2", "copa3", "tronco3", "copa4", 
@@ -138,6 +138,33 @@ plat4={
     Ground = {}
 }
 
+coin1={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+
+    Transform = {
+        Position = "5000,450,0",
+        Scale = "20,20,20",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
+    },
+    Rigidbody = {
+        isTrigger = "true",
+        Type = "Box",
+        Mass = "0",
+        Scale = "90,70,90",
+        Position = "5000,450,0"
+    },
+    Pickable = {
+        Value = "1",
+        GTime = "5"
+    }
+}
+
 -- ************************************************   PARKOUR 2   ************************************************
 
 pk2plat1={
@@ -259,6 +286,33 @@ pk2plat5={
         Position = "-3800,700,-300",
     },
     Ground = {}
+}
+
+coin2={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+
+    Transform = {
+        Position = "-3800,850,-300",
+        Scale = "20,20,20",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
+    },
+    Rigidbody = {
+        isTrigger = "true",
+        Type = "Box",
+        Mass = "0",
+        Scale = "90,70,90",
+        Position = "-3800,850,-300",
+    },
+    Pickable = {
+        Value = "1",
+        GTime = "5"
+    }
 }
 
 -- ************************************************   PARKOUR 3   ************************************************
@@ -406,6 +460,33 @@ pk3plat6={
         Position = "-300,1100,-5000",
     },
     Ground = {}
+}
+
+coin3={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
+
+    Transform = {
+        Position = "-300,1250,-5000",
+        Scale = "20,20,20",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
+    },
+    Rigidbody = {
+        isTrigger = "true",
+        Type = "Box",
+        Mass = "0",
+        Scale = "90,70,90",
+        Position = "-300,1250,-5000",
+    },
+    Pickable = {
+        Value = "1",
+        GTime = "5"
+    }
 }
 
 -- ************************************************   PARKOUR 4   ************************************************
@@ -578,7 +659,32 @@ pk4plat7={
     },
     Ground = {}
 }
+coin4={
+    Active = true,
+    Listener = false,
+    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
 
+    Transform = {
+        Position = "-300,1250,5000",
+        Scale = "20,20,20",
+        Rotation = "0,0,0"
+    },    
+    MeshRenderer = {
+        Mesh = "platano.mesh",
+        Material = "Practica1/amarillo"
+    },
+    Rigidbody = {
+        isTrigger = "true",
+        Type = "Box",
+        Mass = "0",
+        Scale = "90,70,90",
+        Position = "-300,1250,5000",
+    },
+    Pickable = {
+        Value = "1",
+        GTime = "5"
+    }
+}
 
 npc = {
     Active = true,
@@ -832,33 +938,6 @@ camaraPrincipal={
     SoundComponent={
         Ruta = "./Assets/Sounds/",
         Music="main theme.mp3"
-    }
-}
-
-coin1={
-    Active = true,
-    Listener = false,
-    Components = {"Transform","MeshRenderer", "Rigidbody", "Pickable" },
-
-    Transform = {
-        Position = "5000,450,0",
-        Scale = "20,20,20",
-        Rotation = "0,0,0"
-    },    
-    MeshRenderer = {
-        Mesh = "platano.mesh",
-        Material = "Practica1/amarillo"
-    },
-    Rigidbody = {
-        isTrigger = "true",
-        Type = "Box",
-        Mass = "0",
-        Scale = "90,70,90",
-        Position = "5000,450,0"
-    },
-    Pickable = {
-        Value = "1",
-        GTime = "5"
     }
 }
 
