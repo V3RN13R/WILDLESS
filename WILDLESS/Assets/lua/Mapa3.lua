@@ -1463,15 +1463,15 @@ suelo={
 camaraPrincipal={
     Active = true,
     Listener = true,
-    Components = {"Transform","Camera", "SoundComponent"},
+    Components = {"Transform","GameCamera", "SoundComponent"},
 
     Transform = {
         Position = "0,0,0",
         Scale = "5,5,5",
         Rotation = "0,90,0"
     },
-    
-    Camera = {
+
+    GameCamera = {
         Sensibilidad = "-1",
         PosRel = "0,100,500",
         Entity = "mono2",

@@ -77,6 +77,13 @@ public:
 };
 
 
+class WILDLESS_API GameCameraFactory : public Factory
+{
+public:
+	Component* createComponent(std::map<std::string, std::string> args, Entity* ent) override;
+};
+
+
 class WILDLESS_API RecogeBananaFactory : public Factory
 {
 public:
