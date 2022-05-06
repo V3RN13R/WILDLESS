@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\BananaMovement.cpp" />
+    <ClCompile Include="..\Src\CallbacksGame.cpp" />
+    <ClCompile Include="..\Src\GameCamera.cpp" />
+    <ClCompile Include="..\Src\Destroyable.cpp" />
+    <ClCompile Include="..\Src\Enemigo.cpp" />
+    <ClCompile Include="..\Src\FactoryGame.cpp" />
+    <ClCompile Include="..\Src\Ground.cpp" />
+    <ClCompile Include="..\Src\Health.cpp" />
+    <ClCompile Include="..\Src\Logro.cpp" />
+    <ClCompile Include="..\Src\Merodear.cpp" />
+    <ClCompile Include="..\Src\MonkeyStats.cpp" />
+    <ClCompile Include="..\Src\MovementPlayer.cpp" />
+    <ClCompile Include="..\Src\ParkourRecolect.cpp" />
+    <ClCompile Include="..\Src\Patrullar.cpp" />
+    <ClCompile Include="..\Src\Pickable.cpp" />
+    <ClCompile Include="..\Src\PickableDestroy.cpp" />
+    <ClCompile Include="..\Src\Player.cpp" />
+    <ClCompile Include="..\Src\PrimeraSangre.cpp" />
+    <ClCompile Include="..\Src\RecogeBanana.cpp" />
+    <ClCompile Include="..\Src\Shoot.cpp" />
+    <ClCompile Include="..\Src\SistemaLogros.cpp" />
+    <ClCompile Include="..\Src\TextRef.cpp" />
+    <ClCompile Include="..\Src\WildLess.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\BananaMovement.h" />
+    <ClInclude Include="..\Src\CallbacksGame.h" />
+    <ClInclude Include="..\Src\GameCamera.h" />
+    <ClInclude Include="..\Src\Destroyable.h" />
+    <ClInclude Include="..\Src\Enemigo.h" />
+    <ClInclude Include="..\Src\FactoryGame.h" />
+    <ClInclude Include="..\Src\GameUtils.h" />
+    <ClInclude Include="..\Src\Ground.h" />
+    <ClInclude Include="..\Src\Health.h" />
+    <ClInclude Include="..\Src\Logro.h" />
+    <ClInclude Include="..\Src\Merodear.h" />
+    <ClInclude Include="..\Src\MonkeyStats.h" />
+    <ClInclude Include="..\Src\MovementPlayer.h" />
+    <ClInclude Include="..\Src\ParkourRecolect.h" />
+    <ClInclude Include="..\Src\Patrullar.h" />
+    <ClInclude Include="..\Src\Pickable.h" />
+    <ClInclude Include="..\Src\PickableDestroy.h" />
+    <ClInclude Include="..\Src\Player.h" />
+    <ClInclude Include="..\Src\PrimeraSangre.h" />
+    <ClInclude Include="..\Src\RecogeBanana.h" />
+    <ClInclude Include="..\Src\Shoot.h" />
+    <ClInclude Include="..\Src\SistemaLogros.h" />
+    <ClInclude Include="..\Src\TextRef.h" />
+    <ClInclude Include="..\Src\WildlessDll.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3c04cec6-1fe6-4d7a-8317-5e6246ac51d7}</ProjectGuid>
+    <RootNamespace>Wildless</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\ENGINE\VERNIERENGINE\Exes</OutDir>
+    <IntDir>$(SolutionDir)Temp\$(Platform)\$(Configuration)</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\ENGINE\VERNIERENGINE\Exes</OutDir>
+    <IntDir>$(SolutionDir)Temp\$(Platform)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;V3RN13R_GAME;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Engine\VERNIERENGINE\Src\Common;$(SolutionDir)..\Engine\VERNIERENGINE\Dependencies\Ogre\Build\$(Platform)\SDL-main\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Common_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ENGINE\VERNIERENGINE\Exes</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;V3RN13R_GAME;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Engine\VERNIERENGINE\Src\Common;$(SolutionDir)..\Engine\VERNIERENGINE\Dependencies\Ogre\Build\$(Platform)\SDL-main\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Common.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ENGINE\VERNIERENGINE\Exes</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
