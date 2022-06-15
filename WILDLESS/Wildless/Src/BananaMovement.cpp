@@ -80,13 +80,13 @@ void BananaMovement::onCollisionEnter(Entity* other, Vector3D point, Vector3D no
 		else {
 			Rigidbody* _rbOther = static_cast<Rigidbody*>(other->getComponent("Rigidbody"));
 			_rbOther->setEnable(false);
-			other->destroy();
+			other->onDisable();
 		}
 		if (_sc)
 			_sc->playsound("Hit", 0.5f);
 		
 		_rb->setEnable(false);
-		entity_->destroy();
+		entity_->onDisable();
 	}	
 	else {
 		std::cout << "Cocabanana\n";
