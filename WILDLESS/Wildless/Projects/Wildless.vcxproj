@@ -19,10 +19,12 @@
     <ClCompile Include="..\Src\FactoryGame.cpp" />
     <ClCompile Include="..\Src\Ground.cpp" />
     <ClCompile Include="..\Src\Health.cpp" />
+    <ClCompile Include="..\Src\Limite.cpp" />
     <ClCompile Include="..\Src\Logro.cpp" />
     <ClCompile Include="..\Src\Merodear.cpp" />
     <ClCompile Include="..\Src\MonkeyStats.cpp" />
     <ClCompile Include="..\Src\MovementPlayer.cpp" />
+    <ClCompile Include="..\Src\Pared.cpp" />
     <ClCompile Include="..\Src\ParkourRecolect.cpp" />
     <ClCompile Include="..\Src\Patrullar.cpp" />
     <ClCompile Include="..\Src\Pickable.cpp" />
@@ -45,10 +47,12 @@
     <ClInclude Include="..\Src\GameUtils.h" />
     <ClInclude Include="..\Src\Ground.h" />
     <ClInclude Include="..\Src\Health.h" />
+    <ClInclude Include="..\Src\Limite.h" />
     <ClInclude Include="..\Src\Logro.h" />
     <ClInclude Include="..\Src\Merodear.h" />
     <ClInclude Include="..\Src\MonkeyStats.h" />
     <ClInclude Include="..\Src\MovementPlayer.h" />
+    <ClInclude Include="..\Src\Pared.h" />
     <ClInclude Include="..\Src\ParkourRecolect.h" />
     <ClInclude Include="..\Src\Patrullar.h" />
     <ClInclude Include="..\Src\Pickable.h" />

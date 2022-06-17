@@ -1,5 +1,6 @@
 mapa3={
-    entities={"logrops","logrorb","logrotm", "platanosimagen", "vidaimagen",
+    entities={"logrops","logrorb","logrotm", "logrofm",
+     "platanosimagen", "vidaimagen",
      "banana1", "banana2", "banana3","banana4", "banana5", "banana6","banana7", "banana8", -- PLATANOS
      "plat1", "plat2", "plat3", "plat4", "coin1", -- PARKOUR 1
      "pk2plat1", "pk2plat2","pk2plat3","pk2plat4","pk2plat5","coin2", --PARKOUR 2
@@ -128,8 +129,90 @@ mapa3={
     "bq4copa4", 
     "bq4tronco4", 
     "bq4copa5", 
-    "bq4tronco5","SL" }
+    "bq4tronco5","SL",
+    "limite1", "limite2", "limite3", "limite4" }
 }
+
+limite1={
+    Active = true,
+    Listener = false,
+    Components = {"Transform", "Rigidbody", "Pared"},
+
+    Transform = {
+        Position = "9900,900,0",
+        Scale = "2,200,200",
+        Rotation = "0,0,0"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "50,2000,50000",
+        Position = "9900,900,0"
+    },
+    Pared = {}
+}
+
+limite2={
+    Active = true,
+    Listener = false,
+    Components = {"Transform", "Rigidbody", "Pared"},
+
+    Transform = {
+        Position = "-9900,900,0",
+        Scale = "2,200,200",
+        Rotation = "0,0,0"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "50,2000,50000",
+        Position = "-9900,900,0"
+    },
+    Pared = {}
+}
+
+limite3={
+    Active = true,
+    Listener = false,
+    Components = {"Transform", "Rigidbody", "Pared"},
+
+    Transform = {
+        Position = "0,900,9900",
+        Scale = "2,200,200",
+        Rotation = "0,90,0"
+    },
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "50000,2000,50",
+        Position = "0,900,9900"
+    },
+    Pared = {}
+}
+
+limite4={
+    Active = true,
+    Listener = false,
+    Components = {"Transform", "Rigidbody", "Pared"},
+
+    Transform = {
+        Position = "0,900,-9900",
+        Scale = "2,200,200",
+        Rotation = "0,90,0"
+    },  
+    Rigidbody = {
+        isTrigger = "false",
+        Type = "Box",
+        Mass = "0",
+        Scale = "50000,2000,50",
+        Position = "0,900,-9900"
+    },
+    Pared = {}
+}
+
 
 platanosimagen = {
     Active = true,
@@ -204,6 +287,32 @@ SL = {
     }
 }
 
+logrofm={
+    Active=true,
+    Listener=true,
+    Components={"Limite","Text"},
+    Limite={
+        Nombre="Hacia el mas alla",
+        Desc= "alcanza el limite del mapa",
+        MFinal="1"
+    },
+    Text={
+        OverlayName = "textops",
+        Name = "TURU",
+        X = "0",
+        Y = "0",
+        FontSize = "60",
+        Order = "100",
+        Text = "",
+        RT = 0,
+        GT = 0,
+        BT = 0,
+        RD = 0,
+        GD = 0,
+        BD = 0,
+        Begin=0
+    }
+}
 
 logrotm={
     Active=true,

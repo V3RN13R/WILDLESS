@@ -8,7 +8,6 @@
 #include "Scene.h"
 
 SistemaLogros::SistemaLogros(std::map<std::string, std::string> args): _callbackName(args["Callback"]) {
-
 	_completados = 0;
 	_progreso = 0;
 	_nLogros = 0;

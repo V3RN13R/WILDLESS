@@ -21,6 +21,9 @@
 #include "PickableDestroy.h"
 #include "GameCamera.h"
 #include "ParkourRecolect.h"
+#include "Pared.h"
+#include "Limite.h"
+
 Component* PrimeraSangreFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
 {
 	return new PrimeraSangre(args);
@@ -109,6 +112,17 @@ Component* GameCameraFactory::createComponent(std::map<std::string, std::string>
 {
     return new GameCamera(args, ent);
 }
+
+Component* ParedFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
+{
+    return new Pared(args);
+}
+
+Component* LimiteFactory::createComponent(std::map<std::string, std::string> args, Entity* ent)
+{
+    return new Limite(args);
+}
+
 void initGameFactories() {
 	FactoryManager* fM = VernierEngine::getInstance()->getFactoryMng();
     fM ->addFactory("PrimeraSangre", new PrimeraSangreFactory());
@@ -129,5 +143,7 @@ void initGameFactories() {
     fM->addFactory("PickableDestroy", new PickableDestroyFactory()); //
     fM->addFactory("ParkourRecolect", new ParkourRecolectFactory()); //
     fM->addFactory("GameCamera", new GameCameraFactory()); //
+    fM->addFactory("Pared", new ParedFactory()); //
+    fM->addFactory("Limite", new LimiteFactory()); //
 }
 

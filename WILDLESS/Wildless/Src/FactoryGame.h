@@ -112,4 +112,17 @@ class WILDLESS_API ParkourRecolectFactory : public Factory
 public:
 	Component* createComponent(std::map<std::string, std::string> args, Entity* ent) override;
 };
+
+class WILDLESS_API ParedFactory : public Factory
+{
+public:
+	Component* createComponent(std::map<std::string, std::string> args, Entity* ent) override;
+};
+
+class WILDLESS_API LimiteFactory : public Factory
+{
+public:
+	Component* createComponent(std::map<std::string, std::string> args, Entity* ent) override;
+};
+
 void initGameFactories();
