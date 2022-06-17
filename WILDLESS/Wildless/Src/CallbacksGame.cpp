@@ -14,6 +14,11 @@ void menuSeleccion() {
 	//std::cout << "Cambiado a menú selección de personajes" << "\n";
 }
 
+void menuControles() {
+	VernierEngine::getInstance()->getGSM()->changeScene("menucontroles.lua", "menucontroles", false);
+	//std::cout << "Cambiado a menú selección de personajes" << "\n";
+}
+
 void jugar1() {
 	VernierEngine::getInstance()->getGSM()->changeScene("Mapa1.lua", "mapa1", false);
 	//std::cout << "Cambiado a pantalla de jugar" << "\n";
@@ -53,6 +58,7 @@ void close() {
 void initCallbacks() {
 	Callbacks::instance()->addMethod("menuPrincipal", menuPrincipal);
 	Callbacks::instance()->addMethod("menuSeleccion", menuSeleccion);
+	Callbacks::instance()->addMethod("menuControles", menuControles);
 	Callbacks::instance()->addMethod("jugar1", jugar1);
 	Callbacks::instance()->addMethod("jugar2", jugar2);
 	Callbacks::instance()->addMethod("jugar3", jugar3);
