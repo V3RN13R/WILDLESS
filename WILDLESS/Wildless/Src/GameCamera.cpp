@@ -46,13 +46,13 @@ void GameCamera::update() {
 
 
 	MousePositionRelative mousePosRel = InputManager::getInstance()->getMousePosRel();
-	if (InputManager::getInstance()->getMouseButtons().leftDown) {
+	//if (InputManager::getInstance()->getMouseButtons().leftDown) {
 		float rotar = _sensibilidad * mousePosRel.x;
 		Transform* camTr = static_cast<Transform*>(entity_->getComponent("Transform"));
 		camTr->rotate(Vector3D(0, rotar, 0));
 		yaw(-rotar);
 		_monkeAngle = fmod((_monkeAngle + rotar), 360.f);//modulo entre dos floats
-	}
+	//}
 
 
 }
