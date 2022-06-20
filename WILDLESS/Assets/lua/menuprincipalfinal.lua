@@ -1,5 +1,5 @@
 menuprincipalfinal = {
-    entities = {"fondo", "play", "settings", "exit", "camaraPrincipal2"}
+    entities = {"fondo", "play", "controles", "exit", "camaraPrincipal2"}
 }
 
 dll={
@@ -47,17 +47,20 @@ play = {
     }
 }
 
-settings = {
+controles = {
     Active = true,
     Listener = false,
-    Components = {"Image"},
+    Components = {"Image", "Button1"},
     Image = {
-        OverlayName = "imagen3",
-        Name = "settings",
+        OverlayName = "controles",
+        Name = "controls",
         X = "690",
         Y = "70",
         W = "512",
         H = "256"
+    },
+    Button1 = {
+        Callback = "menuControles"
     }
 }
 
